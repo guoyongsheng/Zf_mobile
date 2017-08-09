@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_scan_qr_code_album"
+        android:icon="@mipmap/ic_photo_album_white_24dp"
+        android:title="@string/select_from_album"
+        app:showAsAction="always" />
+</menu>

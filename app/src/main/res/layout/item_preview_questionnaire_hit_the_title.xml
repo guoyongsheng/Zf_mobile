@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/common_margin_left"
+    android:paddingTop="@dimen/common_margin_left">
+
+    <TextView
+        android:id="@+id/item_preview_questionnaire__hit_the_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_margin_left"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_normal" />
+
+    <RatingBar
+        android:id="@+id/item_preview_questionnaire_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:rating="1"
+        android:stepSize="1" />
+
+</LinearLayout>

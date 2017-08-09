@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:minHeight="@dimen/collapsing_tool_bar_height">
+
+        <include layout="@layout/common_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/common_margin_left">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/contacts_detail_image"
+                android:layout_width="@dimen/circle_image_view_size"
+                android:layout_height="@dimen/circle_image_view_size"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="@dimen/common_radius"
+                app:layout_collapseMode="parallax" />
+
+            <TextView
+                android:id="@+id/contacts_detail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_padding_top"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_normal" />
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include layout="@layout/common_content" />
+
+
+</android.support.design.widget.CoordinatorLayout>

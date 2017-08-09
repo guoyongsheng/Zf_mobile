@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+
+    <solid android:color="@color/dark_blue"/>
+
+    <stroke android:color="@color/aliwx_color_blue"
+            android:width="@dimen/common_view_width"/>
+
+    <size
+        android:width="@dimen/drawable_cicrle_size"
+        android:height="@dimen/drawable_cicrle_size"
+        />
+    <padding
+        android:left="@dimen/mine_fragment_icon_border_size"
+        android:top="@dimen/common_view_width"
+        android:right="@dimen/mine_fragment_icon_border_size"
+        android:bottom="@dimen/common_view_width" />
+
+</shape>

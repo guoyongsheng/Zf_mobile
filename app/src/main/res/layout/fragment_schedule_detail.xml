@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/schedule_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_left"
+            android:background="@color/colorWhite"
+            android:paddingBottom="@dimen/common_padding_bottom"
+            android:paddingLeft="@dimen/common_margin_left"
+            android:paddingRight="@dimen/common_margin_right"
+            android:paddingTop="@dimen/common_padding_top"
+            android:textSize="@dimen/font_normal" />
+
+        <RelativeLayout
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/common_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:text="@string/start_time"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/schedule_detail_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_margin_right"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/common_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:text="@string/end_time"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/schedule_detail_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_margin_right"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/common_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:text="@string/hint_time"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/schedule_detail_hint_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_margin_right"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/common_style_relative"
+            android:layout_marginBottom="@dimen/common_margin_left"
+            android:layout_marginTop="@dimen/common_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:text="@string/repeat_time"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/schedule_detail_repeat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/common_margin_right"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/schedule_detail_no_hint"
+            style="@style/common_style_relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_marginBottom="@dimen/common_margin_left"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginRight="@dimen/common_margin_right"
+            android:layout_marginTop="@dimen/common_margin_left"
+            android:background="@drawable/common_button"
+            android:text="@string/schedule_detail_no_hint"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

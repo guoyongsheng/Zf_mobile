@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/right_dish_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/aliwx_color_gray_01"
+        android:layout_centerVertical="true"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        android:scaleType="fitXY"/>
+
+
+    <TextView
+        android:id="@+id/right_dish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        tools:text="菜名"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@+id/right_dish_photo"
+        app:layout_constraintTop_toTopOf="@+id/right_dish_photo" />
+
+
+    <TextView
+        android:id="@+id/right_dish_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="数量"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/right_dish_photo"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/right_dish_photo"
+        app:layout_constraintTop_toTopOf="@+id/right_dish_photo"
+        />
+
+
+
+    <TextView
+        android:id="@+id/right_dish_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="￥ 10.0"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/right_dish_photo"
+        app:layout_constraintLeft_toRightOf="@+id/right_dish_photo"
+        android:layout_marginLeft="15dp" />
+
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/right_dish_add"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        android:src="@mipmap/ic_add_circle_blue_700_36dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/right_dish_photo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.92" />
+
+    <TextView
+        android:id="@+id/right_dish_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/common_padding_bottom"
+        app:layout_constraintRight_toLeftOf="@+id/right_dish_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1"
+        android:textSize="12sp"
+        />
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/right_dish_remove"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:clickable="true"
+        app:layout_constraintRight_toLeftOf="@+id/right_dish_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_remove_circle_outline_blue_700_36dp" />
+
+
+</android.support.constraint.ConstraintLayout>

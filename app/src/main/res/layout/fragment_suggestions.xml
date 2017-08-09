@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_background"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/suggestions_title_text_view_style"
+            android:text="@string/question_title" />
+
+        <EditText
+            android:id="@+id/comments_et"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/aliwx_white"
+            android:gravity="start"
+            android:hint="@string/suggestions_content_hint"
+            android:maxLength="300"
+            android:padding="@dimen/add_cloud_note_title_right"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            style="@style/suggestions_title_text_view_style"
+            android:text="@string/suggestions_add_image_title" />
+
+        <com.zfsoftmh.ui.modules.personal_affairs.set.feedback.suggestions.ZzImageBox
+            android:id="@+id/zz_image_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/aliwx_white"
+            app:zib_img_add="@mipmap/iv_add"
+            app:zib_img_default="@mipmap/iv_default"
+            app:zib_img_deletable="true"
+            app:zib_img_delete="@mipmap/iv_delete"
+            app:zib_img_padding="@dimen/add_cloud_note_title_right"
+            app:zib_img_size_one_line="3"
+            app:zib_left_margin="@dimen/mine_fragment_view_height"
+            app:zib_max_line="1"
+            app:zib_right_margin="@dimen/mine_fragment_view_height"
+            />
+
+
+        <TextView
+            style="@style/suggestions_title_text_view_style"
+            android:text="@string/contact_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/aliwx_white"
+            android:paddingBottom="@dimen/add_cloud_note_title_right"
+            android:paddingLeft="@dimen/add_cloud_note_icon"
+            android:paddingRight="@dimen/add_cloud_note_icon"
+            android:paddingTop="@dimen/add_cloud_note_title_right">
+
+            <TextView
+                android:id="@+id/tel_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/suggestions_phone"
+                android:textColor="@color/aliwx_black"
+                android:textSize="@dimen/font_small" />
+
+            <EditText
+                android:id="@+id/tel_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tel_hint"
+                android:layout_marginLeft="@dimen/mine_fragment_view_height"
+                android:layout_toRightOf="@id/tel_hint"
+                android:background="@null"
+                android:hint="@string/tel_hint"
+                android:inputType="phone"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/aliwx_black"
+                android:textSize="@dimen/font_small" />
+
+            <View
+                android:id="@+id/suggestions_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_view_width"
+                android:layout_below="@id/tel_et"
+                android:layout_marginTop="@dimen/add_cloud_note_title_right"
+                android:background="@color/bg_color" />
+
+            <TextView
+                android:id="@+id/qq_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/suggestions_view"
+                android:layout_marginTop="@dimen/add_cloud_note_title_right"
+                android:text="@string/qq"
+                android:textColor="@color/aliwx_black"
+                android:textSize="@dimen/font_small" />
+
+            <EditText
+                android:id="@+id/qq_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/qq_hint"
+                android:layout_alignLeft="@+id/tel_et"
+                android:layout_below="@id/suggestions_view"
+                android:layout_toRightOf="@id/qq_hint"
+                android:background="@null"
+                android:hint="@string/tel_hint"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/aliwx_black"
+                android:textSize="@dimen/font_small" />
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

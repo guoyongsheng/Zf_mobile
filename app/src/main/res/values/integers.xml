@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="inner_scan_speed">10</integer>
+
+    <!-- 文本的最大行数 -->
+    <integer name="text_max_lines">1</integer>
+    <integer name="common_weight">1</integer>
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- font size -->
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_big">20sp</dimen>
+
+    <!-- 通用的 -->
+    <dimen name="common_margin_left">16dp</dimen>
+    <dimen name="common_margin_right">16dp</dimen>
+    <dimen name="common_padding_top">8dp</dimen>
+    <dimen name="common_padding_bottom">8dp</dimen>
+    <dimen name="common_view_width">1dp</dimen>
+    <dimen name="common_margin_top">8dp</dimen>
+    <dimen name="common_radius">2dp</dimen>
+    <dimen name="common_button_height">48dp</dimen>
+    <dimen name="common_icon_size">24dp</dimen>
+    <dimen name="common_zero_size">0dp</dimen>
+    <dimen name="common_float_action_button_size_normal">56dp</dimen>
+    <dimen name="common_float_action_button_size_min">40dp</dimen>
+    <dimen name="common_load_more_height">40dp</dimen>
+    <dimen name="common_app_bar_layout_elevation">2dp</dimen>
+    <dimen name="common_status_bar_height">25dp</dimen>
+
+    <!-- e ico -->
+    <dimen name="hint_text_view_height">40dp</dimen>
+    <dimen name="title_bar_height">45dp</dimen>
+
+    <!-- GuideActivity -->
+    <dimen name="guide_tv_begin_padding">8dp</dimen>
+    <dimen name="guide_tv_begin_margin_top">120dp</dimen>
+
+    <!-- LoginActivity -->
+    <dimen name="login_user_name_margin_top">80dp</dimen>
+    <dimen name="login_btn_margin_top">24dp</dimen>
+    <dimen name="login_iv_icon_size">72dp</dimen>
+
+    <!-- HomeActivity -->
+    <dimen name="bottom_navigation_view_height">56dp</dimen>
+    <dimen name="circle_image_view_size">56dp</dimen>
+    <dimen name="mine_circle_image_view_margin_right">4dp</dimen>
+    <dimen name="mine_fragment_linear_height">40dp</dimen>
+    <dimen name="mine_fragment_view_height">20dp</dimen>
+    <dimen name="mine_fragment_item_icon_size">32dp</dimen>
+    <dimen name="mine_icon_margin_right">8dp</dimen>
+    <dimen name="mine_icon_margin_end">4dp</dimen>
+    <dimen name="mine_fragment_icon_size">16dp</dimen>
+    <dimen name="mine_fragment_bottom_sheet_item_height">48dp</dimen>
+    <dimen name="app_center_fragment_icon_margin_top">2dp</dimen>
+    <dimen name="app_center_fragment_red_point_size">24dp</dimen>
+    <dimen name="mine_fragment_icon_border_size">2dp</dimen>
+    <dimen name="app_center_fragment_padding">2dp</dimen>
+    <dimen name="contacts_fragment_icon_size">48dp</dimen>
+    <dimen name="contacts_fragment_line_margin">72dp</dimen>
+    <dimen name="contacts_fragment_child_icon_size">40dp</dimen>
+    <dimen name="home_new_list_item_margin_top">4dp</dimen>
+    <dimen name="home_new_list_item_two_picture_space">40dp</dimen>
+    <dimen name="home_new_lst_item_three_picture_space">48dp</dimen>
+    <dimen name="home_banner_indicator_size">6dp</dimen>
+    <dimen name="interest_circle_indicator_height">4dp</dimen>
+    <dimen name="interest_circle_header_item_margin_top">4dp</dimen>
+
+    <!-- ScanQrCodeActivity -->
+    <dimen name="inner_corner_length">30dp</dimen>
+    <dimen name="inner_corner_width">5dp</dimen>
+    <dimen name="inner_margin_top">120dp</dimen>
+
+    <!-- SettingActivity -->
+    <dimen name="setting_item_margin_top">24dp</dimen>
+    <dimen name="setting_point_size">8dp</dimen>
+    <dimen name="setting_item_height">44dp</dimen>
+
+    <!-- AboutActivity -->
+    <dimen name="about_logo_margin_top">80dp</dimen>
+    <dimen name="about_version_margin_top">64dp</dimen>
+    <dimen name="about_copy_right_margin_bottom">32dp</dimen>
+
+    <!-- FeedBackActivity -->
+    <dimen name="feed_back_edit_min_height">200dp</dimen>
+    <dimen name="easy_recycler_view_width">24dp</dimen>
+    <dimen name="section_float_view_size">64dp</dimen>
+    <dimen name="collapsing_tool_bar_height">160dp</dimen>
+
+
+    <!-- OneCardActivity -->
+    <dimen name="one_card_icon_size">32dp</dimen>
+
+
+    <!-- RechargeDetailsActivity -->
+    <dimen name="recharge_details_item_margin_top">4dp</dimen>
+    <dimen name="recharge_details_margin_right">160dp</dimen>
+
+    <!-- CardRechargeActivity -->
+    <dimen name="card_recharge_dialog_margin_top">32dp</dimen>
+    <dimen name="card_recharge_amount_margin_left">100dp</dimen>
+
+
+    <!-- SubscriptionCenterActivity -->
+    <dimen name="item_subscription_center_select_header_margin_right">120dp</dimen>
+    <dimen name="item_subscription_item_padding">8dp</dimen>
+
+    <!-- WebActivity -->
+    <dimen name="progress_bar_height">3dp</dimen>
+
+    <!--AddCloudNote-->
+    <dimen name="add_cloud_note_title_right">10dp</dimen>
+    <dimen name="add_cloud_note_icon">15dp</dimen>
+
+    <!-- ScheduleManagementActivity -->
+    <dimen name="week_bar_view_height">40dp</dimen>
+    <dimen name="schedule_layout_margin_bottom">56dp</dimen>
+
+    <!-- LostAndFoundActivity -->
+    <dimen name="lost_and_found_height">32dp</dimen>
+    <dimen name="lost_and_found_width">80dp</dimen>
+    <dimen name="lost_and_found_name_margin_right">120dp</dimen>
+    <dimen name="lost_and_found_description_margin_right">120dp</dimen>
+
+    <!-- ReleaseNewsActivity -->
+    <dimen name="release_news_detail_min_height">80dp</dimen>
+
+
+    <dimen name="__picker_iwf_actionBarSize">48dip</dimen>
+    <dimen name="__picker_item_photo_size">80dip</dimen>
+    <dimen name="__picker_item_camera_size">80dip</dimen>
+    <dimen name="__picker_item_directory_height">80dp</dimen>
+
+    <!--FavouritesListActivity-->
+    <dimen name="favourites_video_width">220dp</dimen>
+    <dimen name="favourites_video_height">150dp</dimen>
+
+    <!-- QuestionnaireActivity -->
+    <dimen name="item_questionnaire_publish_margin_right">160dp</dimen>
+
+    <!-- MineFragment -->
+    <dimen name="font_middle">16sp</dimen>
+
+    <!--IntegralRankingActivity-->
+    <dimen name="first_ranking_header">84dp</dimen>
+    <dimen name="second_ranking_header">74dp</dimen>
+
+
+    <dimen name="drawable_cicrle_size">15dp</dimen>
+
+</resources>

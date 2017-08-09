@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ls_alpha_white">
+
+
+    <TextView
+        android:id="@+id/detail_no_data_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/no_data"
+        android:visibility="visible" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/content_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.youth.banner.Banner
+                android:id="@+id/exchange_record_detail_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:image_scale_type="center_crop"
+                app:indicator_drawable_selected="@drawable/indicator_drawable_selected"
+                app:indicator_drawable_unselected="@drawable/indicator_drawable_unselected"
+                app:indicator_height="@dimen/home_banner_indicator_size"
+                app:indicator_width="@dimen/home_banner_indicator_size"
+                app:is_auto_play="true"
+                app:layout_scrollFlags="scroll"
+                app:title_textsize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/exchange_detail_goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exchange_record_detail_banner"
+                android:layout_margin="@dimen/common_margin_left"
+                android:text=""
+                android:textColor="@color/__picker_black_40"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                android:id="@+id/exchange_detail_goods_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/exchange_detail_goods_name"
+                android:layout_marginBottom="@dimen/common_margin_left"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:src="@mipmap/points" />
+
+            <TextView
+                android:id="@+id/exchange_detail_integral_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exchange_detail_goods_name"
+                android:layout_marginLeft="@dimen/mine_icon_margin_end"
+                android:layout_toRightOf="@id/exchange_detail_goods_icon"
+                android:text=""
+                android:textColor="@color/orange"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/exchange_detail_number_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exchange_detail_goods_name"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_toRightOf="@id/exchange_detail_integral_number"
+                android:text="数量："
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/exchange_detail_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exchange_detail_goods_name"
+                android:layout_marginLeft="@dimen/common_padding_top"
+                android:layout_toRightOf="@id/exchange_detail_number_title"
+                android:text=""
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/detail_exchange_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/exchange_detail_goods_name"
+                android:layout_marginRight="@dimen/common_margin_left"
+                android:text=""
+                android:textColor="@color/orange"
+                android:textSize="@dimen/font_normal" />
+
+            <TextView
+                android:id="@+id/exchange_order_number_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_exchange_state"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginTop="@dimen/common_margin_left"
+                android:text="订单编号：" />
+
+            <TextView
+                android:id="@+id/exchange_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_exchange_state"
+                android:layout_marginLeft="@dimen/common_radius"
+                android:layout_marginTop="@dimen/common_margin_left"
+                android:layout_toRightOf="@id/exchange_order_number_title"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/exchange_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/exchange_order_number_title"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginRight="@dimen/common_margin_left"
+                android:layout_marginTop="@dimen/common_margin_left"
+                android:text=""
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/exchange_receive_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/exchange_order_number_title"
+                android:layout_marginRight="@dimen/common_margin_left"
+                android:layout_marginTop="@dimen/common_margin_left"
+                android:text=""
+                android:textSize="@dimen/font_small"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_padding_top"
+                android:layout_below="@id/exchange_create_time"
+                android:layout_marginTop="@dimen/common_margin_left"
+                android:background="@color/__picker_common_primary" />
+
+            <TextView
+                android:id="@+id/exchange_detail_goods_describe_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:layout_margin="@dimen/common_margin_left"
+                android:text="@string/integral_goods_detail_title" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_view_width"
+                android:layout_below="@id/exchange_detail_goods_describe_title"
+                android:background="@color/__picker_common_primary" />
+
+            <TextView
+                android:id="@+id/exchange_detail_goods_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view2"
+                android:layout_margin="@dimen/common_margin_left" />
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

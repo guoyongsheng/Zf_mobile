@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin_left"
+        android:text="@string/write_note"
+        android:textSize="@dimen/font_small" />
+
+    <EditText
+        android:id="@+id/submit_questionnaire_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:background="@drawable/drawable_feed_back"
+        android:gravity="left|top"
+        android:hint="@string/submit_questionnaire_hint"
+        android:minHeight="@dimen/feed_back_edit_min_height"
+        android:padding="@dimen/common_padding_bottom"
+        android:textColorHint="@color/colorGray"
+        android:textSize="@dimen/font_normal" />
+
+    <CheckBox
+        android:id="@+id/submit_questionnaire_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin_left"
+        android:text="@string/result_see_person"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_normal" />
+
+    <Button
+        android:id="@+id/submit_questionnaire_submit"
+        style="@style/common_style_relative"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:background="@drawable/common_button"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_normal" />
+
+</LinearLayout>

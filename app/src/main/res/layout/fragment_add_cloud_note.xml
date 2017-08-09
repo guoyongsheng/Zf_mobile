@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliwx_white"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_zero_size"
+        android:layout_weight="8">
+
+        <TextView
+            android:id="@+id/note_load_hint_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/add_cloud_note_load_hint"
+            android:textSize="@dimen/font_normal"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/add_cloud_note_title_right"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginRight="@dimen/common_margin_left"
+                android:layout_marginTop="@dimen/add_cloud_note_title_right"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/add_cloud_note_title_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/add_cloud_note_title_hint"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_normal" />
+
+                <LinearLayout
+                    android:id="@+id/add_note_label_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/add_cloud_note_title_right"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/note_label_view"
+                        android:layout_width="@dimen/mine_fragment_view_height"
+                        android:layout_height="@dimen/mine_fragment_view_height"
+                        android:background="@drawable/drawable_circle" />
+
+                    <TextView
+                        android:id="@+id/note_label_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/add_cloud_note_title_right"
+                        android:gravity="center_vertical"
+                        android:text="@string/add_cloud_note_label_hint"
+                        android:textSize="@dimen/font_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_view_width"
+                android:background="@color/bg_color" />
+
+            <ScrollView
+                android:id="@+id/share_note_content_sll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/add_cloud_note_title_right"
+                android:layout_marginLeft="@dimen/mine_fragment_view_height"
+                android:layout_marginRight="@dimen/mine_fragment_view_height"
+                android:layout_marginTop="@dimen/add_cloud_note_title_right"
+                android:fillViewport="true"
+                android:scrollbars="vertical"
+                android:layerType="software"
+                >
+
+                <EditText
+                    android:id="@+id/add_cloud_note_content_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="@string/add_cloud_note_content_hint"
+                    android:textSize="@dimen/font_normal"
+                    />
+            </ScrollView>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_cloud_note_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.1"
+        android:paddingBottom="@dimen/add_cloud_note_title_right"
+        android:paddingLeft="@dimen/add_cloud_note_title_right"
+        android:paddingTop="@dimen/add_cloud_note_title_right">
+
+        <ImageView
+            android:id="@+id/cloud_note_delete_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@null"
+            android:src="@mipmap/delete_content_all" />
+
+        <ImageView
+            android:id="@+id/add_pic_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mine_fragment_view_height"
+            android:layout_toRightOf="@id/cloud_note_delete_iv"
+            android:contentDescription="@null"
+            android:src="@mipmap/pic_note"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/cloud_note_repeal_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mine_fragment_view_height"
+            android:layout_toRightOf="@id/add_pic_iv"
+            android:contentDescription="@null"
+            android:src="@mipmap/undo"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

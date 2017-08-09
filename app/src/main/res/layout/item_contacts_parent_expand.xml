@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/common_margin_left"
+    android:background="@color/colorWhite"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/common_padding_bottom"
+    android:paddingEnd="@dimen/common_margin_right"
+    android:paddingLeft="@dimen/common_margin_left"
+    android:paddingRight="@dimen/common_margin_right"
+    android:paddingStart="@dimen/common_margin_left"
+    android:paddingTop="@dimen/common_margin_top">
+
+    <ImageView
+        android:id="@+id/contacts_parent_expanded_icon"
+        android:layout_width="@dimen/contacts_fragment_icon_size"
+        android:layout_height="@dimen/contacts_fragment_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/common_margin_top"
+        android:layout_marginRight="@dimen/common_margin_top"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/contacts_parent_expanded_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/contacts_parent_expanded_icon"
+        android:textSize="@dimen/font_normal" />
+
+    <ImageView
+        android:id="@+id/contacts_parent_expanded_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_arrow_down" />
+
+</RelativeLayout>
+

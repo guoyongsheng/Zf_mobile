@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/week_bar_view_height"
+    android:layout_marginLeft="@dimen/add_cloud_note_icon"
+    android:layout_marginRight="@dimen/add_cloud_note_icon"
+    >
+
+    <ImageView
+        android:id="@+id/check_mark_iv"
+        android:layout_width="@dimen/mine_fragment_view_height"
+        android:layout_height="@dimen/mine_fragment_view_height"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/check_mark"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        />
+
+    <View
+        android:id="@+id/item_note_label_view"
+        android:layout_width="@dimen/mine_fragment_view_height"
+        android:layout_height="@dimen/mine_fragment_view_height"
+        android:layout_marginLeft="@dimen/progress_bar_height"
+        android:layout_toRightOf="@id/check_mark_iv"
+        android:background="@drawable/drawable_circle"
+        android:layout_centerVertical="true"
+
+        />
+
+    <TextView
+        android:id="@+id/note_label_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/add_cloud_note_title_right"
+        android:layout_marginRight="@dimen/add_cloud_note_title_right"
+        android:text="@string/add_cloud_note_label_hint"
+        android:textSize="@dimen/font_normal"
+        android:layout_centerVertical="true"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_view_width"
+        android:background="@color/common_divider_color"
+        android:layout_below="@+id/note_label_name_tv"
+        android:layout_marginTop="@dimen/add_cloud_note_title_right"
+        />
+
+</RelativeLayout>

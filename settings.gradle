@@ -1,0 +1,2 @@
+include ':app', ':pay', ':push', ':umeng', ':chat', ':calendar', ':map'
+

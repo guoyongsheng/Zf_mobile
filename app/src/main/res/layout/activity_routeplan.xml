@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
+        android:padding="10dp">
+
+
+        <Button
+            android:id="@+id/routeplan_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/commmon_back" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/ways_car"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+
+            android:background="#FF0000" />
+
+
+        <ImageView
+            android:id="@+id/ways_walker"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/ways_car"
+            android:background="#000079" />
+
+        <ImageView
+            android:id="@+id/ways_bus"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/ways_car"
+            android:background="#00FFFF"
+ />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/routeplan_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+
+</LinearLayout>

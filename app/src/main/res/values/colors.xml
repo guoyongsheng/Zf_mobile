@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用的分割线的颜色 -->
+    <color name="common_divider_color">#f3f6f9</color>
+    <color name="common_background">#f3f6f9</color>
+
+    <color name="colorPrimary">#4cb2ff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#cccccc</color>
+    <color name="light_black">#373737</color>
+    <color name="color_bg_gray2">#8f8f8f</color>
+    <color name="color_ecf3f6">#ecf3f6</color>
+    <color name="color_555555">#555555</color>
+    <color name="color_9a9a9a">#9a9a9a</color>
+    <color name="color_16bc55">#16bc55</color>
+
+    <color name="cameo">#DCDCDC</color>
+    <color name="third_text_color">#999999</color>
+    <color name="color_library_bg">#65FFFFFF</color>
+
+    <color name="__picker_pager_bg">#CA000000</color>
+    <color name="__picker_selected_bg">#44000000</color>
+    <color name="__picker_black_40">#282828</color>
+    <color name="__picker_common_primary">#f3f3f3</color>
+    <color name="__picker_text_40">#282828</color>
+    <color name="__picker_text_80">#505050</color>
+    <color name="__picker_text_120">#787878</color>
+    <color name="__picker_item_photo_border_selected">#ff99cc00</color>
+    <color name="__picker_item_photo_border_n">#33ffffff</color>
+    <color name="orange">#FF9900</color>
+</resources>

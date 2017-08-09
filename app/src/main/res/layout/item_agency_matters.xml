@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/common_margin_right"
+    android:layout_marginLeft="@dimen/common_margin_left"
+    android:layout_marginRight="@dimen/common_margin_right"
+    android:layout_marginStart="@dimen/common_margin_left"
+    android:layout_marginTop="@dimen/common_margin_left"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="@dimen/common_radius"
+    app:cardElevation="@dimen/common_radius">
+
+    <RelativeLayout
+        android:id="@+id/item_agency_matters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/common_margin_left">
+
+        <TextView
+            android:id="@+id/item_agency_matters_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_555555"
+            android:textSize="@dimen/font_normal"
+            tool:text="吕小布的请假申请" />
+
+        <TextView
+            android:id="@+id/item_agency_matters_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_agency_matters_reason"
+            android:layout_alignStart="@id/item_agency_matters_reason"
+            android:layout_below="@id/item_agency_matters_reason"
+            android:layout_marginTop="@dimen/common_padding_top"
+            android:textColor="@color/color_9a9a9a"
+            android:textSize="@dimen/font_small"
+            tool:text="起草人: 呂小布" />
+
+        <TextView
+            android:id="@+id/item_agency_matters_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_agency_matters_reason"
+            android:layout_alignStart="@id/item_agency_matters_reason"
+            android:layout_below="@id/item_agency_matters_name"
+            android:layout_marginTop="@dimen/common_padding_top"
+            android:textColor="@color/color_9a9a9a"
+            android:textSize="@dimen/font_small"
+            tool:text="起草时间: 2017-2-22" />
+
+        <TextView
+            android:id="@+id/item_agency_matters_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_16bc55"
+            android:textSize="@dimen/font_normal"
+            tool:text="申请" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

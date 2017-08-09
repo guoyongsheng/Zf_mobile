@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_parent_header_office_contacts"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_button_height"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginStart="@dimen/common_margin_left"
+        android:text="@string/organization"
+        android:textSize="@dimen/font_normal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/common_margin_right"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_arrow" />
+
+</RelativeLayout>

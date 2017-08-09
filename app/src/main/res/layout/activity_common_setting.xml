@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_head" />
+
+    <RelativeLayout
+        style="@style/common_style_relative"
+        android:layout_marginTop="@dimen/common_margin_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginStart="@dimen/common_margin_left"
+            android:text="@string/receive_msg_hint"
+            android:textSize="@dimen/font_normal" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/common_setting_receive_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/common_margin_right"
+            android:layout_marginRight="@dimen/common_margin_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/common_style_relative"
+        android:layout_marginTop="@dimen/common_margin_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginStart="@dimen/common_margin_left"
+            android:text="@string/light_mode"
+            android:textSize="@dimen/font_normal" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/common_setting_day_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/common_margin_right"
+            android:layout_marginRight="@dimen/common_margin_right" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/common_setting_rl_font_size"
+        style="@style/common_style_relative"
+        android:layout_marginTop="@dimen/common_margin_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginStart="@dimen/common_margin_left"
+            android:text="@string/font_size"
+            android:textSize="@dimen/font_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/common_margin_right"
+            android:layout_marginRight="@dimen/common_margin_right"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/common_setting_app_theme"
+        style="@style/common_style_relative"
+        android:layout_marginTop="@dimen/common_margin_right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginStart="@dimen/common_margin_left"
+            android:text="@string/app_theme"
+            android:textSize="@dimen/font_normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/common_margin_right"
+            android:layout_marginRight="@dimen/common_margin_right"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_arrow" />
+
+    </RelativeLayout>
+
+</LinearLayout>

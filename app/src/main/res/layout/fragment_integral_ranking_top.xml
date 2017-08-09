@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/common_background"
+    android:paddingBottom="@dimen/common_margin_right"
+    >
+
+    <RelativeLayout
+        android:layout_width="@dimen/common_zero_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/second_ranking_header"
+            android:layout_width="@dimen/second_ranking_header"
+            android:layout_height="@dimen/second_ranking_header"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/background2"
+            app:civ_border_color="@color/aliwx_white"
+            app:civ_border_width="@dimen/mine_fragment_icon_border_size" />
+
+        <ImageView
+            android:id="@+id/second_ranking_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_ranking_header"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="@dimen/mine_fragment_view_height"
+            android:layout_toRightOf="@id/second_ranking_header"
+            android:src="@mipmap/second" />
+
+        <TextView
+            android:id="@+id/second_ranking_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_ranking_flag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_radius"
+            android:textColor="@color/__picker_black_40"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/second_ranking_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second_ranking_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_radius"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/common_zero_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:layout_marginTop="-20dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/first_ranking_header"
+            android:layout_width="@dimen/first_ranking_header"
+            android:layout_height="@dimen/first_ranking_header"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/background2"
+            app:civ_border_color="@color/aliwx_white"
+            app:civ_border_width="@dimen/mine_fragment_icon_border_size" />
+
+        <ImageView
+            android:id="@+id/first_ranking_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_ranking_header"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="@dimen/mine_fragment_view_height"
+            android:layout_toRightOf="@id/first_ranking_header"
+            android:src="@mipmap/first" />
+
+        <TextView
+            android:id="@+id/first_ranking_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_ranking_flag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_radius"
+            android:textColor="@color/__picker_black_40"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/first_ranking_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_ranking_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_radius"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/common_zero_size"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/third_ranking_header"
+            android:layout_width="@dimen/second_ranking_header"
+            android:layout_height="@dimen/second_ranking_header"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/background2"
+            app:civ_border_color="@color/aliwx_white"
+            app:civ_border_width="@dimen/mine_fragment_icon_border_size" />
+
+        <ImageView
+            android:id="@+id/third_ranking_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third_ranking_header"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="@dimen/mine_fragment_view_height"
+            android:layout_toRightOf="@id/third_ranking_header"
+            android:src="@mipmap/third" />
+
+        <TextView
+            android:id="@+id/third_ranking_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third_ranking_flag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_radius"
+            android:textColor="@color/__picker_black_40"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/third_ranking_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third_ranking_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/common_radius"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_normal" />
+    </RelativeLayout>
+</LinearLayout>

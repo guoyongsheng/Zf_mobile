@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliwx_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_notifications_white_24dp" />
+
+            <TextView
+                android:id="@+id/integral_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/add_cloud_note_title_right"
+                android:text="0"
+                android:textColor="@color/aliwx_white"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/integral_goods_search"
+                style="@style/integral_mall_linearLayout_style">
+
+                <ImageView
+                    style="@style/integral_mall_image_style"
+                    android:src="@mipmap/ic_icon_attentijon_contract" />
+
+                <TextView
+                    style="@style/integral_mall_text_style"
+                    android:text="@string/search" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/integral_income_layout"
+                style="@style/integral_mall_linearLayout_style">
+
+                <ImageView
+                    style="@style/integral_mall_image_style"
+                    android:src="@mipmap/ic_icon_attentijon_contract" />
+
+                <TextView
+                    style="@style/integral_mall_text_style"
+                    android:text="@string/integral_income_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exchange_record_layout"
+                style="@style/integral_mall_linearLayout_style">
+
+                <ImageView
+                    style="@style/integral_mall_image_style"
+                    android:src="@mipmap/ic_favorite_red_400_24dp" />
+
+                <TextView
+                    style="@style/integral_mall_text_style"
+                    android:text="@string/exchange_record_title" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_padding_top"
+            android:background="@color/__picker_common_primary" />
+
+        <include layout="@layout/item_integral_goods_sort" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

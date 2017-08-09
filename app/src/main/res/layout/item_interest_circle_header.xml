@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingBottom="@dimen/common_padding_bottom"
+    android:paddingLeft="@dimen/common_margin_left"
+    android:paddingTop="@dimen/common_padding_top">
+
+    <ImageView
+        android:id="@+id/item_interest_circle_header_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_interest_circle_header_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_bottom"
+        android:layout_marginRight="@dimen/common_padding_top"
+        android:layout_marginTop="@dimen/interest_circle_header_item_margin_top"
+        android:maxLines="@integer/text_max_lines"
+        android:textSize="@dimen/font_normal"
+        app:layout_constraintLeft_toRightOf="@id/item_interest_circle_header_iv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_interest_circle_header_iv" />
+
+    <TextView
+        android:id="@+id/item_interest_circle_header_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/common_padding_bottom"
+        android:layout_marginTop="@dimen/interest_circle_header_item_margin_top"
+        android:maxLines="@integer/text_max_lines"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_normal"
+        app:layout_constraintLeft_toLeftOf="@id/item_interest_circle_header_name"
+        app:layout_constraintTop_toBottomOf="@id/item_interest_circle_header_name" />
+
+</android.support.constraint.ConstraintLayout>

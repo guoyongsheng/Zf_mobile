@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_page"
+        android:icon="@mipmap/ic_home_white_24dp"
+        android:title="@string/home_page" />
+
+    <item
+        android:id="@+id/center_application"
+        android:icon="@mipmap/ic_apps_white_24dp"
+        android:title="@string/center_application" />
+
+    <item
+        android:id="@+id/conversation"
+        android:icon="@mipmap/ic_message_white_24dp"
+        android:title="@string/str_conversation" />
+
+
+    <item
+        android:id="@+id/contacts"
+        android:icon="@mipmap/ic_contacts_white_24dp"
+        android:title="@string/contacts" />
+
+    <item
+        android:id="@+id/mine"
+        android:icon="@mipmap/ic_perm_identity_white_24dp"
+        android:title="@string/mine" />
+
+</menu>

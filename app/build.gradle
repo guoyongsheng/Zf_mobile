@@ -1,0 +1,172 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'com.jakewharton.hugo'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                app_package_name: rootProject.ext.applicationId
+        ]
+    }
+
+    productFlavors {
+        dev {
+            minSdkVersion rootProject.ext.minSdkVersionDev
+        }
+
+        prod {
+            minSdkVersion rootProject.ext.minSdkVersion
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            //applicationIdSuffix '.release' // 设置release时的包名为com.zfsoftmh.release
+            minifyEnabled true  //是否混淆
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            ndk {
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+        }
+
+        debug {
+            //applicationIdSuffix '.debug' // 设置debug时的包名为com.zfsoftmh.debug
+            minifyEnabled false  //是否混淆
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            ndk {
+                abiFilters "armeabi", "armeabi-v7a", "x86"
+            }
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file(STORE_FILE_PATH)
+            storePassword STORE_PASSWORD
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+        }
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        abortOnError false
+    }
+    sourceSets.main {
+        jni.srcDirs = []
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$rootProject.ext.espressoVersion", {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //第三方
+    compile project(':pay')
+    compile project(':push')
+    compile project(':chat')
+    compile project(':umeng')
+    compile project(':calendar')
+    compile project(':map')
+
+    compile "com.android.support:support-v4:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support.constraint:constraint-layout:$rootProject.ext.supportConstraintVersion"
+    compile "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:recyclerview-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:gridlayout-v7:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:cardview-v7:$rootProject.ext.supportLibraryVersion"
+    //test
+    testCompile "junit:junit:$rootProject.ext.junitVersion"
+    testCompile "org.mockito:mockito-core:$rootProject.ext.mockitoVersion"
+    //debug
+    compile "com.orhanobut:logger:$rootProject.ext.loggerVersion"
+    debugCompile "com.facebook.stetho:stetho:$rootProject.ext.stethoVersion"
+    compile "com.facebook.stetho:stetho-okhttp3:$rootProject.ext.stethoVersion"
+    debugCompile "com.squareup.leakcanary:leakcanary-android:$rootProject.ext.leakcanaryVersion"
+    releaseCompile "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.ext.leakcanaryVersion"
+    testCompile "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.ext.leakcanaryVersion"
+    debugCompile "com.github.markzhai:blockcanary-android:$rootProject.ext.blockcanaryVersion"
+    releaseCompile "com.github.markzhai:blockcanary-no-op:$rootProject.ext.blockcanaryVersion"
+
+    //network
+    compile "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofitVersion"
+    compile "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.okhttpVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjavaVersion"
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroidVersion"
+    //glide
+    compile "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"
+    compile "com.github.bumptech.glide:okhttp3-integration:$rootProject.ext.okhttp3iIntegrationVersion"
+    compile "jp.wasabeef:glide-transformations:$rootProject.ext.glideTransformationsVersion"
+    //inject
+    compile "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    //android M permissions
+    compile "pub.devrel:easypermissions:$rootProject.ext.easyPermissionsVersion"
+    //CircleImageView
+    compile "de.hdodenhof:circleimageview:$rootProject.ext.circleImageViewVersion"
+    //QRCode
+    compile "cn.yipianfengye.android:zxing-library:$rootProject.ext.zxingVersion"
+
+    //ExpandableRecyclerView
+    compile "com.bignerdranch.android:expandablerecyclerview:$rootProject.ext.expandablerecyclerviewVersion"
+
+    //Sidebar
+    compile "com.camnter.easyrecyclerviewsidebar:easyrecyclerviewsidebar:$rootProject.ext.easyrecyclerviewsidebarVersion"
+
+    //StickyHeaderRecyclerView
+    compile "com.timehop.stickyheadersrecyclerview:library:$rootProject.ext.stickyheadersrecyclerviewVersion"
+
+    //loading
+    compile "com.wang.avi:library:$rootProject.ext.loadingVersion"
+
+    //banner
+    compile "com.youth.banner:banner:$rootProject.ext.bannerVersion"
+
+    //multidex
+    compile "com.android.support:multidex:$rootProject.ext.multidexVersion"
+
+    //navigationtabbar
+    compile "devlight.io:navigationtabbar:$rootProject.ext.navigationtabbarVersion"
+
+    //image compress
+    compile "com.zxy.android:tiny:$rootProject.ext.tinyVersion"
+
+    //status bar
+    compile "com.gyf.barlibrary:barlibrary:$rootProject.ext.barlibraryVersion"
+
+    //date picker
+    compile "com.appeaser.sublimepickerlibrary:sublimepickerlibrary:$rootProject.ext.sublimepickerlibraryVersion"
+
+    //CircularFloatingActionMenu
+    compile "com.oguzdev:CircularFloatingActionMenu:$rootProject.ext.circularFloatingActionMenuVersion"
+
+    //easyrecyclerview
+    compile "com.jude:easyrecyclerview:$rootProject.ext.easyrecyclerviewVersion"
+
+   // compile 'com.ethanhua:skeleton:0.2.0'
+
+}

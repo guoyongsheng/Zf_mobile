@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/week_bar_view_height"
+    android:layout_marginLeft="@dimen/add_cloud_note_icon"
+    android:layout_marginRight="@dimen/add_cloud_note_icon"
+    android:background="@color/colorWhite"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <FrameLayout
+            android:layout_width="@dimen/common_zero_size"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="@dimen/add_cloud_note_title_right">
+
+            <ImageView
+                android:id="@+id/item_edit_label_add"
+                android:layout_width="@dimen/mine_fragment_view_height"
+                android:layout_height="@dimen/mine_fragment_view_height"
+                android:contentDescription="@null"
+                android:src="@mipmap/add_note"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/item_edit_label_view"
+                android:layout_width="@dimen/mine_fragment_view_height"
+                android:layout_height="@dimen/mine_fragment_view_height"
+                android:background="@drawable/drawable_circle"
+                android:contentDescription="@null" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/item_edit_label_name_et"
+            android:layout_width="@dimen/common_zero_size"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mine_fragment_view_height"
+            android:layout_marginRight="@dimen/inner_corner_width"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:hint="@string/please_input_label_name"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textSize="@dimen/font_normal"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+
+        <FrameLayout
+            android:id="@+id/item_select_frame"
+            android:layout_width="@dimen/circle_image_view_size"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/item_edit_label_cancel"
+                android:layout_width="@dimen/inner_corner_length"
+                android:layout_height="@dimen/inner_corner_length"
+                android:layout_gravity="left"
+                android:background="@mipmap/error"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:id="@+id/item_edit_label_sure"
+                android:layout_width="@dimen/mine_fragment_view_height"
+                android:layout_height="@dimen/mine_fragment_view_height"
+                android:layout_gravity="right|center_vertical"
+                android:background="@mipmap/yes"
+                android:contentDescription="@null" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_view_width"
+        android:background="@color/common_divider_color" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="home_item">
+        <item>@string/ignore_the_dynamic</item>
+        <item>@string/no_longer_receive_this_dynamic</item>
+    </array>
+</resources>

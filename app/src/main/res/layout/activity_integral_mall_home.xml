@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@id/app_bar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <LinearLayout
+                android:id="@+id/integral_mall_home_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg1"
+                android:orientation="vertical"
+                android:layout_marginTop="80dp"
+                app:layout_collapseMode="parallax">
+
+                <TextView
+                    android:id="@+id/integral_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mine_fragment_view_height"
+                    android:layout_marginTop="@dimen/mine_fragment_view_height"
+                    android:gravity="center_horizontal"
+                    android:text="@string/zero"
+                    android:textColor="@color/aliwx_white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/contacts_fragment_child_icon_size"
+                    android:layout_marginLeft="@dimen/common_load_more_height"
+                    android:layout_marginRight="@dimen/common_load_more_height"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/points_ranking_layout"
+                        style="@style/integral_mall_home_linearLayout_style"
+                        android:layout_marginRight="@dimen/common_load_more_height">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ranking" />
+
+                        <TextView
+                            style="@style/integral_mall_home_textView_style"
+                            android:text="@string/points_ranking" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/integral_income"
+                        style="@style/integral_mall_home_linearLayout_style">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/detail" />
+
+                        <TextView
+                            style="@style/integral_mall_home_textView_style"
+                            android:text="@string/integral_income_title" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@id/too_bar_id"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@mipmap/bg3"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/tool_bar_theme"
+                app:titleTextAppearance="@style/common_toolbar_title"
+                app:titleTextColor="@color/colorWhite">
+
+                <TextView
+                    android:id="@+id/common_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_big"
+                    android:visibility="visible" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/fragment_integral_mall_tab"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_navigation_view_height"
+            android:background="@color/aliwx_white"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_view_width"
+            android:background="@color/__picker_common_primary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_integral_mall_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

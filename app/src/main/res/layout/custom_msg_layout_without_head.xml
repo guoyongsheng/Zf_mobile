@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="104dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/aliwx_common_bg_color">
+
+    <ImageView
+        android:contentDescription="@null"
+        android:id="@+id/head"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        tools:background="@drawable/aliwx_head_default" />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/head"
+        android:layout_toEndOf="@+id/head"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/aliwx_column_top_margin"
+        android:layout_marginStart="@dimen/aliwx_column_top_margin"
+        android:paddingBottom="@dimen/guide_tv_begin_padding"
+        android:ellipsize="end"
+        tools:text="小猫"
+        android:textSize="@dimen/aliwx_font_first_grade"
+        android:textColor="@color/aliwx_black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_contact_card"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorGray"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

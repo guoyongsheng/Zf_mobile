@@ -1,0 +1,239 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@mipmap/ic_favorite_red_400_24dp</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+    </style>
+
+    <style name="theme_splash_activity" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/drawable_splash</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="theme_guide_activity" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="theme_login_activity" parent="AppTheme">
+        <item name="android:animationDuration">0</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="tool_bar_theme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="actionMenuTextColor">@color/aliwx_white</item>
+    </style>
+
+    <style name="common_toolbar_title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- 通用的箭头的样式 -->
+    <style name="common_style_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingRight">@dimen/common_margin_left</item>
+        <item name="android:src">@mipmap/ic_arrow</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- 通用的Relative样式 -->
+    <style name="common_style_relative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_button_height</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <!-- TabLayout字体大小-->
+    <style name="style_tab_layout" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <!-- ProgressBar 进度条样式 -->
+    <style name="style_progress_bar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/drawable_progress_bar</item>
+        <item name="android:minHeight">@dimen/progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/progress_bar_height</item>
+    </style>
+
+    <!--云笔记复选框样式-->
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="more_item_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+
+    <style name="style_date_picker" parent="@style/SublimeDatePickerStyle">
+
+        <item name="spHeaderBackground">@color/colorAccent</item>
+        <item name="spMaxDate">12/31/2020</item>
+    </style>
+
+    <!--云笔记标签圆形视图样式-->
+    <style name="shape_view">
+        <item name="android:layout_width">@dimen/inner_corner_length</item>
+        <item name="android:layout_height">@dimen/inner_corner_length</item>
+        <item name="android:layout_marginLeft">@dimen/add_cloud_note_title_right</item>
+        <item name="android:background">@drawable/drawable_circle</item>
+    </style>
+
+    <style name="suggestions_title_text_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/add_cloud_note_icon</item>
+        <item name="android:textColor">@color/aliwx_black</item>
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <!--积分商城linearLayout样式-->
+    <style name="integral_mall_linearLayout_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/add_cloud_note_title_right</item>
+    </style>
+
+    <!--积分商城text样式-->
+    <style name="integral_mall_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/common_padding_top</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <!--积分商城text样式-->
+    <style name="integral_mall_image_style">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <!--我的头布局RelativeLayout样式-->
+    <style name="mine_relativeLayout_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--我的头布局LinearLayout样式-->
+    <style name="mine_linearLayout_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--我的头布局textView样式-->
+    <style name="mine_textView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <!--我的头布局view样式-->
+    <style name="mine_view_style">
+        <item name="android:layout_width">@dimen/common_view_width</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@color/common_divider_color</item>
+    </style>
+
+    <style name="cartdialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="integral_mall_home_linearLayout_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">@dimen/add_cloud_note_title_right</item>
+        <item name="android:paddingTop">@dimen/add_cloud_note_title_right</item>
+        <item name="android:background">@drawable/drawable_integral_mall_home</item>
+    </style>
+    <!--积分商城TextView样式-->
+    <style name="integral_mall_home_textView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/common_padding_top</item>
+        <item name="android:textColor">@color/aliwx_white</item>
+        <item name="android:textSize">@dimen/font_middle</item>
+    </style>
+
+    <!--自定义透明dialog-->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <!--自定义透明dialog-->
+    <style name="CommProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--帐号与安全TextView样式-->
+    <style name="account_safety_textView_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/__picker_black_40</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <!--帐号与安全RelativeLayout样式-->
+    <style name="account_safety_RelativeLayout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/common_margin_left</item>
+        <item name="android:background">@color/aliwx_white</item>
+    </style>
+
+    <!-- 帐号与安全通用的箭头的样式 -->
+    <style name="account_safety_arrow_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@mipmap/ic_arrow</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <!--帐号与安全绑定状态TextView样式-->
+    <style name="account_safety_state_textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:text">未绑定</item>
+    </style>
+</resources>

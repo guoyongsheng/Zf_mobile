@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ls_alpha_white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/mine_fragment_item_icon_size"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_mine_header_iv"
+            android:layout_width="@dimen/about_version_margin_top"
+            android:layout_height="@dimen/about_version_margin_top"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/common_margin_left"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/aliwx_white"
+            app:civ_border_width="@dimen/mine_fragment_icon_border_size" />
+
+        <RelativeLayout
+            android:id="@+id/person_info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginRight="@dimen/common_margin_left"
+            android:layout_toRightOf="@id/fragment_mine_header_iv">
+
+            <TextView
+                android:id="@+id/fragment_mine_header_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/add_cloud_note_title_right"
+                android:textColor="@color/__picker_text_80"
+                android:textSize="@dimen/font_middle" />
+
+            <TextView
+                android:id="@+id/member_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_mine_header_name"
+                android:background="@color/orange"
+                android:paddingBottom="1dp"
+                android:paddingLeft="@dimen/add_cloud_note_title_right"
+                android:paddingRight="@dimen/add_cloud_note_title_right"
+                android:paddingTop="1dp"
+                android:text="@string/menber_lever"
+                android:textColor="@color/aliwx_white"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/mine_integral_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_mine_header_name"
+                android:layout_marginLeft="@dimen/add_cloud_note_title_right"
+                android:layout_toRightOf="@id/member_level"
+                android:text="@string/mine_integral_number"
+                android:textSize="@dimen/font_normal" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/integral_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_left"
+            android:background="@drawable/drawable_mine_sign_in"
+            android:paddingBottom="@dimen/home_banner_indicator_size"
+            android:paddingLeft="@dimen/add_cloud_note_icon"
+            android:paddingRight="@dimen/add_cloud_note_icon"
+            android:paddingTop="@dimen/home_banner_indicator_size"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fragment_mine_header_iv"
+            android:layout_marginTop="@dimen/common_margin_left"
+            android:background="@color/common_divider_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/person_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_padding_bottom"
+        android:paddingTop="@dimen/common_padding_bottom">
+
+        <LinearLayout style="@style/mine_relativeLayout_style">
+
+            <LinearLayout style="@style/mine_linearLayout_style">
+
+                <TextView
+                    android:id="@+id/dynamic_title"
+                    style="@style/mine_textView_style"
+                    android:text="@string/dynamic" />
+
+                <TextView
+                    android:id="@+id/dynamic_number"
+                    style="@style/mine_textView_style"
+                    android:text="@string/zero" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View style="@style/mine_view_style" />
+
+        <LinearLayout style="@style/mine_relativeLayout_style">
+
+            <LinearLayout style="@style/mine_linearLayout_style">
+
+                <TextView
+                    android:id="@+id/concern_title"
+                    style="@style/mine_textView_style"
+                    android:text="@string/concern" />
+
+                <TextView
+                    android:id="@+id/concern_number"
+                    style="@style/mine_textView_style"
+                    android:text="@string/zero" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/mine_view_style" />
+
+        <LinearLayout style="@style/mine_relativeLayout_style">
+
+            <LinearLayout style="@style/mine_linearLayout_style">
+
+                <TextView
+                    android:id="@+id/fans_title"
+                    style="@style/mine_textView_style"
+                    android:text="@string/fans" />
+
+                <TextView
+                    android:id="@+id/fans_number"
+                    style="@style/mine_textView_style"
+                    android:text="@string/zero" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/mine_view_style" />
+
+        <LinearLayout style="@style/mine_relativeLayout_style">
+
+            <LinearLayout style="@style/mine_linearLayout_style">
+
+                <TextView
+                    android:id="@+id/website_title"
+                    style="@style/mine_textView_style"
+                    android:text="@string/mine" />
+
+                <TextView
+                    android:id="@+id/website_number"
+                    style="@style/mine_textView_style"
+                    android:text="@string/mine_home" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_right"
+        android:background="@color/common_divider_color" />
+</LinearLayout>

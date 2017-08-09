@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false">
+
+    <!-- 填充颜色 -->
+    <solid android:color="@color/aliwx_color_gray_04"/>
+    <!-- 边框线 -->
+    <stroke android:width="@dimen/common_view_width"
+        android:color="@color/aliwx_color_gray_03"/>
+    <size
+        android:width="@dimen/drawable_cicrle_size"
+        android:height="@dimen/drawable_cicrle_size"
+        />
+    <padding
+        android:left="@dimen/mine_fragment_icon_border_size"
+        android:top="@dimen/common_view_width"
+        android:right="@dimen/mine_fragment_icon_border_size"
+        android:bottom="@dimen/common_view_width" />
+
+</shape>

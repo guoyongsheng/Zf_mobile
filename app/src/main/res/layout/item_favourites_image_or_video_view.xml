@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/aliwx_white"
+    android:orientation="vertical"
+    android:id="@+id/item_image_or_video_layout"
+    >
+
+    <include layout="@layout/item_favourites_head_view" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin_left">
+
+        <ImageView
+            android:id="@+id/favourites_video_iv"
+            android:layout_width="@dimen/favourites_video_width"
+            android:layout_height="@dimen/favourites_video_height"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/hploading_default" />
+
+        <ImageView
+            android:id="@+id/media_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_media_play"
+            android:visibility="gone"
+            />
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_padding_top"
+        android:background="@color/__picker_common_primary" />
+</LinearLayout>

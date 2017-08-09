@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/common_recycler_view" />
+
+    <com.camnter.easyrecyclerviewsidebar.EasyRecyclerViewSidebar
+        android:id="@+id/section_sidebar"
+        android:layout_width="@dimen/easy_recycler_view_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|end" />
+
+    <TextView
+        android:id="@+id/section_float_view"
+        android:layout_width="@dimen/section_float_view_size"
+        android:layout_height="@dimen/section_float_view_size"
+        android:layout_gravity="center"
+        android:background="@drawable/drawable_float_view"
+        android:gravity="center"
+        android:padding="@dimen/common_padding_bottom"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_normal"
+        android:visibility="gone" />
+
+</FrameLayout>

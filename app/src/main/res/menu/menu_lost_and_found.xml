@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/lost_and_found_select_type_have"
+        android:title="@string/discovery_type_have" />
+
+    <item
+        android:id="@+id/lost_and_found_select_type_no"
+        android:title="@string/discovery_type_no" />
+
+</menu>

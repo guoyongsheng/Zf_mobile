@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mine_item_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/common_padding_top">
+
+    <ImageView
+        android:id="@+id/mine_item_content_icon"
+        android:layout_width="@dimen/mine_fragment_item_icon_size"
+        android:layout_height="@dimen/mine_fragment_item_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/mine_circle_image_view_margin_right"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/mine_circle_image_view_margin_right"
+        android:layout_marginStart="@dimen/common_margin_left"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/mine_item_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/mine_item_content_icon"
+        android:layout_toRightOf="@id/mine_item_content_icon" />
+
+    <TextView
+        android:id="@+id/mine_item_text_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mine_item_text_name"
+        android:layout_alignStart="@id/mine_item_text_name"
+        android:layout_below="@id/mine_item_text_name"
+        android:visibility="gone" />
+
+</RelativeLayout>

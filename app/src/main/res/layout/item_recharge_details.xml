@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingBottom="@dimen/common_padding_bottom"
+    android:paddingTop="@dimen/common_padding_top">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/recharge_details_margin_right"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/recharge_details_margin_right"
+        android:layout_marginStart="@dimen/common_margin_left"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_recharge_details_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/item_recharge_details_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/recharge_details_item_margin_top"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/common_margin_right"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_recharge_details_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/item_recharge_details_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/recharge_details_item_margin_top"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+
+</RelativeLayout>

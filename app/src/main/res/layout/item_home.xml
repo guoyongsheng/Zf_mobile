@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingBottom="@dimen/common_padding_bottom"
+    android:paddingTop="@dimen/common_padding_top">
+
+    <TextView
+        android:id="@+id/item_home_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="200dp"
+        android:background="@color/common_background"
+        android:maxLines="1"
+        android:padding="@dimen/common_padding_bottom"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/item_home_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:background="@color/common_background"
+        android:padding="@dimen/common_padding_bottom"
+        android:textSize="@dimen/font_normal" />
+
+</RelativeLayout>

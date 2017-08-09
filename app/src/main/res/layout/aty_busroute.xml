@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/busroute_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/aliwx_color_blue"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/busroute_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/commmon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="路线规划"
+            android:textColor="@color/aliwx_white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/aliwx_white"
+            android:orientation="vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/aliwx_color_gray_03"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/name_bus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="118路"
+                    android:textColor="@color/aliwx_black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/name_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_bus"
+                    android:paddingTop="5dp"
+                    android:text="4元-步行547米"
+                    android:textColor="@color/aliwx_black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:text="详情"
+                    android:textColor="@color/aliwx_black"
+                    android:textSize="18sp"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    <com.amap.api.maps.MapView
+        android:layout_below="@id/busroute_top"
+        android:layout_above="@id/detail"
+        android:id="@+id/busroute_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.amap.api.maps.MapView>
+
+
+
+    </RelativeLayout>

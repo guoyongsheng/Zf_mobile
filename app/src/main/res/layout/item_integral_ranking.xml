@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/aliwx_white"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/aliwx_white"
+        android:padding="@dimen/common_margin_left">
+
+        <TextView
+            android:id="@+id/item_ranking_number"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/font_big"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_ranking_header"
+            android:layout_width="@dimen/common_button_height"
+            android:layout_height="@dimen/common_button_height"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_toRightOf="@id/item_ranking_number"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/background2"
+            app:civ_border_color="@color/aliwx_white"
+            app:civ_border_width="@dimen/mine_fragment_icon_border_size" />
+
+        <TextView
+            android:id="@+id/item_ranking_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding_top"
+            android:layout_marginRight="@dimen/common_padding_top"
+            android:layout_toRightOf="@id/item_ranking_header"
+            android:textSize="@dimen/font_middle" />
+
+        <TextView
+            android:id="@+id/item_ranking_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_middle" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/add_cloud_note_title_right"
+        android:layout_marginRight="@dimen/add_cloud_note_title_right">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_view_width"
+            android:background="@color/common_divider_color" />
+    </LinearLayout>
+
+</LinearLayout>

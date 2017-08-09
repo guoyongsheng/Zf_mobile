@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/aliwx_white"
+    android:padding="@dimen/common_margin_left">
+
+    <ImageView
+        android:id="@+id/exchange_record_image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/hploading_default" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/exchange_record_arrow"
+        android:layout_marginRight="@dimen/common_margin_left"
+        android:layout_marginLeft="@dimen/add_cloud_note_title_right"
+        android:layout_toRightOf="@id/exchange_record_image">
+
+        <TextView
+            android:id="@+id/exchange_record_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/__picker_black_40"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/exchange_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/font_normal"
+            android:layout_below="@id/exchange_record_name"
+            android:layout_marginTop="@dimen/common_radius"
+            />
+
+        <TextView
+            android:id="@+id/exchange_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exchange_record_time"
+            android:layout_marginTop="@dimen/common_radius"
+            android:text=""
+            android:textColor="@color/orange"
+            android:textSize="@dimen/font_normal" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/exchange_record_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_arrow" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <ImageView
+        android:id="@+id/map_mark"
+        android:layout_width="12dp"
+        android:layout_height="16dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/map_mark"/>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:paddingTop="12dp"
+    android:paddingLeft="5dp"
+
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:textColor="#161616"
+        android:text="hahahahaha"
+
+        />
+    <TextView
+        android:id="@+id/address"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="3dp"
+        android:textSize="10sp"
+        android:textColor="#646363"
+        android:text="hahahahaha"
+
+        />
+</LinearLayout>
+
+</LinearLayout>

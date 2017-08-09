@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/aliwx_white"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/eatery_location_iv"
+            android:layout_width="18dp"
+            android:layout_height="23dp"
+            android:background="@mipmap/map_mark"/>
+
+
+        <TextView
+            android:id="@+id/eatery_location_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="定位地址"
+            android:paddingRight="20dp"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+
+            />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="输入商家或店铺名"
+            />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/common_easy_recycler_view" />
+
+
+</LinearLayout>

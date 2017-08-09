@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_calendar"
+        android:icon="@mipmap/ic_today_white_24dp"
+        android:title="@string/calendar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/home_interest_circle"
+        android:icon="@mipmap/ic_search_white_24dp"
+        android:title="@string/interest_circle"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/home_friend"
+        android:icon="@drawable/ic_friends_24dp"
+        android:title="@string/friends"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/home_setting"
+        android:icon="@mipmap/ic_settings_white_24dp"
+        android:title="@string/set"
+        app:showAsAction="always" />
+
+
+</menu>

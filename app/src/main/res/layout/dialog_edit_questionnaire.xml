@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_single_choice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:gravity="center"
+        android:text="@string/single_choice"
+        android:textSize="@dimen/font_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_view_width"
+        android:background="@color/common_divider_color" />
+
+
+    <TextView
+        android:id="@+id/dialog_muti_choice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:gravity="center"
+        android:text="@string/muti_choice"
+        android:textSize="@dimen/font_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_view_width"
+        android:background="@color/common_divider_color" />
+
+
+    <TextView
+        android:id="@+id/dialog_short_answer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:gravity="center"
+        android:text="@string/short_answer"
+        android:textSize="@dimen/font_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_view_width"
+        android:background="@color/common_divider_color" />
+
+
+    <TextView
+        android:id="@+id/dialog_hit_the_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:gravity="center"
+        android:text="@string/hit_the_title"
+        android:textSize="@dimen/font_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_view_width"
+        android:background="@color/common_divider_color" />
+
+
+    <TextView
+        android:id="@+id/dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_button_height"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_normal" />
+
+
+</LinearLayout>

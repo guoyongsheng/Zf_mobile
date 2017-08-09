@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false"
+    >
+    <!-- 填充颜色 -->
+    <solid android:color="@color/colorGray"/>
+    <!-- 边框线 -->
+    <stroke android:width="@dimen/common_view_width"
+        android:color="@color/colorWhite"/>
+    <size
+        android:width="@dimen/mine_fragment_view_height"
+        android:height="@dimen/mine_fragment_view_height"
+        />
+    <padding
+        android:left="@dimen/mine_fragment_icon_border_size"
+        android:top="@dimen/common_view_width"
+        android:right="@dimen/mine_fragment_icon_border_size"
+        android:bottom="@dimen/common_view_width" />
+</shape>

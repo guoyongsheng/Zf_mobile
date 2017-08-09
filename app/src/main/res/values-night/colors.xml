@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用的分割线的颜色 -->
+    <color name="common_divider_color">#18181a</color>
+    <color name="common_background">#18181a</color>
+
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#18181a</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#1f2023</color>
+    <color name="colorGray">#a2a2a2</color>
+    <color name="light_black">#373737</color>
+    <color name="color_bg_gray2">#8f8f8f</color>
+    <color name="color_ecf3f6">#ecf3f6</color>
+    <color name="color_555555">#555555</color>
+    <color name="color_9a9a9a">#9a9a9a</color>
+    <color name="color_16bc55">#16bc55</color>
+</resources>

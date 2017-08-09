@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliwx_color_white"
+   >
+
+    <RelativeLayout
+        android:id="@+id/rl_ordersubmit_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/drawable_rectengle"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/order_submit_totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:text="￥22.5"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_ordersubmit_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/aliwx_color_blue"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="提交订单"
+            android:textColor="@color/aliwx_color_white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scroll_ordersubmit_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_ordersubmit_bottom">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_map_mark"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/map_mark" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_map_mark"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="好地方紫荆花路239号" />
+
+                <TextView
+                    android:id="@+id/tv_address_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_address"
+                    android:layout_toRightOf="@id/iv_map_mark"
+                    android:paddingLeft="10dp"
+                    android:text="小明同学 13747474747" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/__picker_common_primary" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/picker_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:src="@mipmap/gray_car" />
+
+                <TextView
+                    android:id="@+id/order_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="预计送达时间" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/order_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择几人用餐"
+                android:padding="10dp"/>
+
+
+            <TextView
+                android:id="@+id/pepole_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"/>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_descroption"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@color/aliwx_color_white"
+                android:gravity="top|left"
+                android:hint="备注" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

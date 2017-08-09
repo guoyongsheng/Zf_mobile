@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingBottom="@dimen/common_padding_bottom"
+    android:paddingTop="@dimen/common_padding_top">
+
+    <TextView
+        android:id="@+id/item_meeting_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:maxLines="1"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/item_meeting_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_meeting_title"
+        android:layout_below="@id/item_meeting_title"
+        android:layout_marginTop="@dimen/common_padding_top"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/item_meeting_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/item_meeting_time"
+        android:layout_toRightOf="@id/item_meeting_time"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_normal" />
+
+
+    <TextView
+        android:id="@+id/item_meeting_times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/item_meeting_time"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:textSize="@dimen/font_normal" />
+
+</RelativeLayout>

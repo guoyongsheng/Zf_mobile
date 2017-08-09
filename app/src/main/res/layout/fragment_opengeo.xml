@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_geo_open"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_info_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/aliwx_color_white"
+        >
+     <View
+         android:id="@+id/line_info_poi"
+         android:layout_width="match_parent"
+         android:layout_height="0.5dp"
+         android:background="@color/aliwx_color_gray_03"
+        />
+        <TextView
+            android:id="@+id/tv_info_poi"
+            android:layout_below="@id/line_info_poi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="agaga"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/aliwx_black"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_info_poi_info"
+            android:layout_below="@id/tv_info_poi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sfsfs"
+            android:textSize="12sp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/aliwx_color_gray_01"
+            android:paddingTop="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_goto_gaode"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/go_to_gaode"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

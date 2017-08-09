@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginTop="@dimen/common_margin_right"
+        android:text="@string/add_questionnaire_title"
+        android:textSize="@dimen/font_normal" />
+
+    <EditText
+        android:id="@+id/add_questionnaire_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:background="@drawable/drawable_feed_back"
+        android:gravity="left|top"
+        android:hint="@string/please_input_question_name"
+        android:paddingBottom="@dimen/common_padding_bottom"
+        android:paddingLeft="@dimen/common_padding_bottom"
+        android:paddingRight="@dimen/common_padding_bottom"
+        android:paddingTop="@dimen/common_padding_top"
+        android:textColorHint="@color/colorGray"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginTop="@dimen/common_margin_right"
+        android:text="@string/add_questionnaire_description"
+        android:textSize="@dimen/font_normal" />
+
+    <EditText
+        android:id="@+id/add_questionnaire_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:background="@drawable/drawable_feed_back"
+        android:gravity="left|top"
+        android:inputType="text"
+        android:minHeight="@dimen/feed_back_edit_min_height"
+        android:paddingBottom="@dimen/common_padding_bottom"
+        android:paddingLeft="@dimen/common_padding_bottom"
+        android:paddingRight="@dimen/common_padding_bottom"
+        android:paddingTop="@dimen/common_padding_top"
+        android:textColorHint="@color/colorGray"
+        android:textSize="@dimen/font_normal" />
+
+    <Button
+        android:id="@+id/add_questionnaires"
+        style="@style/common_style_relative"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:layout_marginTop="@dimen/common_margin_right"
+        android:background="@drawable/common_button"
+        android:text="@string/add_questionnaire_create"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_normal" />
+
+</LinearLayout>

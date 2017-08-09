@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/item_child_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_view_width"
+        android:layout_marginLeft="@dimen/contacts_fragment_line_margin"
+        android:background="@color/common_divider_color" />
+
+    <LinearLayout
+        android:id="@+id/item_child_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_padding_bottom"
+        android:paddingEnd="@dimen/common_margin_right"
+        android:paddingLeft="0dp"
+        android:paddingRight="@dimen/common_margin_right"
+        android:paddingStart="0dp"
+        android:paddingTop="@dimen/common_margin_top">
+
+        <ImageView
+            android:id="@+id/item_child_icon"
+            android:layout_width="@dimen/contacts_fragment_child_icon_size"
+            android:layout_height="@dimen/contacts_fragment_child_icon_size"
+            android:layout_marginLeft="@dimen/contacts_fragment_line_margin"
+            android:layout_marginStart="@dimen/contacts_fragment_line_margin"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_contacts_child_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_top"
+            android:layout_marginStart="@dimen/common_margin_top"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

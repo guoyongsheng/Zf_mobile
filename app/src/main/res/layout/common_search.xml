@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_search"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <LinearLayout
+        android:id="@+id/comments_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_float_action_button_size_min"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:background="@drawable/drawable_mine_sign_in"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_padding_bottom"
+        android:paddingRight="@dimen/common_padding_bottom">
+
+        <ImageView
+            android:layout_width="@dimen/common_icon_size"
+            android:layout_height="@dimen/common_icon_size"
+            android:layout_marginRight="@dimen/common_padding_bottom"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_search_white_24dp" />
+
+        <EditText
+            android:id="@+id/common_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:enabled="false"
+            android:focusable="false"
+            android:hint="@string/service_search"
+            android:textColorHint="@color/colorWhite"
+            android:inputType="text"
+            android:maxLines="@integer/text_max_lines"
+            android:textSize="@dimen/font_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

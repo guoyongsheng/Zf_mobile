@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/common_padding_bottom"
+    android:paddingTop="@dimen/common_padding_top">
+
+    <TextView
+        android:id="@+id/item_contacts_detail_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginStart="@dimen/common_margin_left"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/item_contacts_detail_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_contacts_detail_key"
+        android:layout_alignStart="@id/item_contacts_detail_key"
+        android:layout_below="@id/item_contacts_detail_key"
+        android:layout_marginTop="@dimen/common_radius"
+        android:textSize="@dimen/font_normal" />
+
+    <ImageView
+        android:id="@+id/item_contacts_call"
+        android:layout_width="@dimen/common_icon_size"
+        android:layout_height="@dimen/common_icon_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/common_margin_right"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_icon_yellow_contacts"
+        android:visibility="gone" />
+
+</RelativeLayout>

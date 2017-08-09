@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_float_action_button_size_normal"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/common_margin_left"
+        >
+
+        <ImageView
+            android:id="@+id/mine_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_message_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+        <ImageView
+            android:id="@+id/mine_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_settings_white_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/mine_skin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_photo_album_white_24dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/mine_setting"
+            android:paddingRight="@dimen/add_cloud_note_title_right"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/common_recycler_view" />
+
+</LinearLayout>

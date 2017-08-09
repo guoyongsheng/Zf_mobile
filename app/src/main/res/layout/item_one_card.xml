@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_one_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingBottom="@dimen/common_margin_left"
+    android:paddingTop="@dimen/common_margin_left">
+
+    <ImageView
+        android:id="@+id/one_card_icon"
+        android:layout_width="@dimen/one_card_icon_size"
+        android:layout_height="@dimen/one_card_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginStart="@dimen/common_margin_left"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/one_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_padding_top"
+        android:layout_marginStart="@dimen/common_padding_top"
+        android:layout_toRightOf="@id/one_card_icon"
+        android:textSize="@dimen/font_normal" />
+
+    <ImageView
+        style="@style/common_style_arrow"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

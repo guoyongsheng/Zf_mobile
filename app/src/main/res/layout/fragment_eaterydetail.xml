@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_eatery"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/aliwx_white"
+        android:layout_weight="0.19"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/eatery_detail_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/aliwx_color_gray_02"
+            android:contentDescription="@null" />
+
+         <TextView
+             android:id="@+id/eatery_detail_tv_name"
+             android:layout_toRightOf="@id/eatery_detail_image"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="16sp"
+             android:text="第一食堂"
+             android:paddingLeft="15dp"/>
+        <TextView
+            android:id="@+id/eatery_detail_tv_info"
+            android:layout_below="@id/eatery_detail_tv_name"
+            android:layout_toRightOf="@id/eatery_detail_image"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textSize="14sp"
+            android:text="没有满减没有优惠"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.7"
+        android:weightSum="4"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/eatery_detail_recycler_left"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/eatery_detail_recycler_right"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.11"
+        android:paddingLeft="10dp"
+        android:background="@color/aliwx_white">
+
+        <FrameLayout
+            android:id="@+id/shopping_cart_layout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/shopcartbg"
+            android:layout_alignParentLeft="true"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/shop_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@mipmap/ic_shopping_cart_white_24dp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/shopcart_count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/shopping_cart_layout"
+            android:text="￥0"
+            android:textSize="16sp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/__picker_black_40"
+            android:gravity="center_vertical"/>
+
+
+        <TextView
+            android:id="@+id/pay_the_bill"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/aliwx_white"
+            android:text="去结算"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

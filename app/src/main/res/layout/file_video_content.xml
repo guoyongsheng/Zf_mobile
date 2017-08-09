@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/common_padding_bottom"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/file_video_thumb"
+            android:contentDescription="@null"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent"
+            tools:background="@drawable/aliwx_head_bg_0"/>
+
+        <TextView
+            android:id="@+id/file_video_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:paddingStart="@dimen/common_padding_bottom"
+            android:paddingEnd="@dimen/common_padding_bottom"
+            android:paddingTop="@dimen/mine_icon_margin_end"
+            android:paddingBottom="@dimen/mine_icon_margin_end"
+            android:background="#50345345"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/aliwx_white"
+            tools:text="12kb"/>
+
+        <TextView
+            android:id="@+id/file_video_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:textColor="@color/aliwx_white"
+            android:paddingStart="@dimen/common_padding_bottom"
+            android:paddingEnd="@dimen/common_padding_bottom"
+            android:paddingTop="@dimen/mine_icon_margin_end"
+            android:paddingBottom="@dimen/mine_icon_margin_end"
+            android:textSize="@dimen/font_small"
+            tools:text="12:00"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/file_video_title"
+        tools:text="shit.mp4"
+        android:layout_width="match_parent"
+        android:padding="3dp"
+        android:maxLines="1"
+        android:ellipsize="middle"
+        android:textSize="@dimen/font_normal"
+        android:layout_height="wrap_content" />
+</LinearLayout>

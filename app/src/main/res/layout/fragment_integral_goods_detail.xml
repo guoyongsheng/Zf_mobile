@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ls_alpha_white">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/goods_detail_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/integral_goods_detail_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:image_scale_type="center_crop"
+                app:indicator_drawable_selected="@drawable/indicator_drawable_selected"
+                app:indicator_drawable_unselected="@drawable/indicator_drawable_unselected"
+                app:indicator_height="@dimen/home_banner_indicator_size"
+                app:indicator_width="@dimen/home_banner_indicator_size"
+                app:is_auto_play="true"
+                app:layout_scrollFlags="scroll"
+                app:title_textsize="@dimen/font_normal"
+                />
+
+
+                <TextView
+                    android:id="@+id/integral_goods_detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/integral_goods_detail_banner"
+                    android:layout_margin="@dimen/common_margin_left"
+                    android:text="商品名"
+                    android:textColor="@color/__picker_black_40"
+                    android:textSize="@dimen/font_normal" />
+
+                <ImageView
+                    android:id="@+id/integral_goods_detail_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/integral_goods_detail_name"
+                    android:layout_marginBottom="@dimen/common_margin_left"
+                    android:layout_marginLeft="@dimen/common_margin_left"
+                    android:src="@mipmap/points" />
+
+                <TextView
+                    android:id="@+id/integral_goods_detail_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/integral_goods_detail_name"
+                    android:layout_marginLeft="@dimen/mine_icon_margin_end"
+                    android:layout_toRightOf="@id/integral_goods_detail_icon"
+                    android:text="0"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/stock_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/integral_goods_detail_name"
+                    android:layout_marginRight="@dimen/common_margin_left"
+                    android:text="0件"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/integral_goods_detail_name"
+                    android:layout_toLeftOf="@id/stock_number"
+                    android:text="库存："
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:id="@+id/exchange_number_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_below="@id/integral_goods_detail_icon"
+                    android:layout_marginLeft="@dimen/common_margin_left"
+                    android:gravity="center"
+                    android:text="数量"
+                    android:textSize="@dimen/font_normal" />
+
+                <com.zfsoftmh.ui.modules.personal_affairs.integral_mall.integral_goods_detail.AmountView
+                    android:id="@+id/adder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/integral_goods_detail_icon"
+                    android:layout_marginRight="15dp"
+                    app:btnTextSize="@dimen/font_normal"
+                    app:btnWidth="36dp"
+                    app:tvWidth="50dp" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_padding_top"
+                    android:layout_below="@id/adder"
+                    android:layout_marginTop="@dimen/common_margin_left"
+                    android:background="@color/__picker_common_primary" />
+
+                <TextView
+                    android:id="@+id/integral_goods_detail_describe_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view1"
+                    android:layout_margin="@dimen/common_margin_left"
+                    android:text="@string/integral_goods_detail_title" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_view_width"
+                    android:layout_below="@id/integral_goods_detail_describe_title"
+                    android:background="@color/__picker_common_primary" />
+
+                <TextView
+                    android:id="@+id/integral_goods_detail_describe_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view2"
+                    android:layout_margin="@dimen/common_margin_left" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/__picker_common_primary"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/cameo" />
+
+        <Button
+            android:id="@+id/integral_goods_exchange_bt"
+            style="@style/common_style_relative"
+            android:layout_marginBottom="@dimen/add_cloud_note_title_right"
+            android:layout_marginLeft="@dimen/common_load_more_height"
+            android:layout_marginRight="@dimen/common_load_more_height"
+            android:layout_marginTop="@dimen/add_cloud_note_title_right"
+            android:background="@drawable/common_button"
+            android:text="兑换"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+</RelativeLayout>

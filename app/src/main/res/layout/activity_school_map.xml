@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/school_map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@mipmap/search_quan"
+            android:gravity="center_vertical"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:id="@+id/switchSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="   切换校区   "
+                android:textColor="#242525"
+                android:onClick="switchschool" />
+
+
+            <View android:layout_width="0.5dp"
+                android:layout_height="20dp"
+                android:background="#a7a7a7"/>
+
+
+            <TextView
+                android:id="@+id/keyWord"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center_vertical"
+                android:hint=" 请输入关键字"
+                android:textSize="14sp"
+                android:onClick="change_to_search"
+                />
+            <View android:layout_width="0.5dp"
+                android:layout_height="20dp"
+                android:background="#a7a7a7"/>
+            <TextView
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:text="搜索"
+                android:textColor="#242525"
+                android:onClick="change_to_search" />
+
+
+        </LinearLayout>
+
+
+
+       <ImageView
+            android:id="@+id/location"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:background="@mipmap/location"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:onClick="location"
+            />
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            >
+            <include layout="@layout/item_map" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

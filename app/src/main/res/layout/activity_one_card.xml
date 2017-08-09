@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/common_toolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginTop="@dimen/common_margin_left"
+            android:text="@string/money"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/one_card_end_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin_left"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginStart="@dimen/common_margin_left"
+            android:layout_marginTop="@dimen/common_margin_top"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_big"
+            android:visibility="gone" />
+
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/one_card_loading"
+            style="@style/AVLoadingIndicatorView.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_margin_left"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:layout_marginStart="@dimen/common_margin_left"
+            android:layout_marginTop="@dimen/common_margin_top" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/common_content" />
+
+</android.support.design.widget.CoordinatorLayout>

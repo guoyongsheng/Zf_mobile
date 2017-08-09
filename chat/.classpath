@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="libs/alisdk-hotpatch-3.jar"/>
+	<classpathentry kind="lib" path="libs/alisdk-kernel-2.1.0.jar"/>
+	<classpathentry kind="lib" path="libs/alisdk-kernel-base-2.1.0.jar"/>
+	<classpathentry kind="lib" path="libs/alisdk-rpc-3.jar"/>
+	<classpathentry kind="lib" path="libs/alisdk-security-8.jar"/>
+	<classpathentry kind="lib" path="libs/alisdk-system-15.jar"/>
+	<classpathentry kind="lib" path="libs/alisdk-tlog-1.jar"/>
+	<classpathentry kind="lib" path="libs/alisdk-ui-7.jar"/>
+	<classpathentry kind="lib" path="libs/alisdk-upload-1.jar"/>
+	<classpathentry kind="lib" path="libs/alisdk-ut-5.jar"/>
+	<classpathentry kind="lib" path="libs/IMCore-2.0.2.jar"/>
+	<classpathentry kind="lib" path="libs/mediaservice-4.1.7.jar"/>
+	<classpathentry kind="lib" path="libs/sdk-legacy-support-2.1.0.jar"/>
+	<classpathentry kind="lib" path="libs/securityguard-3.1.27.jar"/>
+	<classpathentry kind="lib" path="libs/utdid4all-1.0.4.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

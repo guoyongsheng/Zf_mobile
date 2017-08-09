@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_schedule_manage_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingBottom="@dimen/common_padding_bottom"
+    android:paddingTop="@dimen/common_padding_top">
+
+    <ImageView
+        android:id="@+id/item_schedule_manage_iv"
+        android:layout_width="@dimen/mine_circle_image_view_margin_right"
+        android:layout_height="@dimen/mine_circle_image_view_margin_right"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/red_point" />
+
+    <TextView
+        android:id="@+id/item_schedule_manage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_bottom"
+        android:layout_marginRight="@dimen/guide_tv_begin_margin_top"
+        android:layout_toRightOf="@id/item_schedule_manage_iv"
+        android:maxLines="1"
+        android:textSize="@dimen/font_normal" />
+
+
+    <TextView
+        android:id="@+id/item_schedule_manage_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_schedule_manage_title"
+        android:layout_below="@id/item_schedule_manage_title"
+        android:textSize="@dimen/font_normal" />
+
+
+    <ImageView
+        android:id="@+id/item_schedule_manage_arrow"
+        style="@style/common_style_arrow"
+        android:contentDescription="@string/app_name" />
+
+
+    <TextView
+        android:id="@+id/item_schedule_manage_repeat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/item_schedule_manage_arrow"
+        android:textSize="@dimen/font_normal" />
+
+</RelativeLayout>

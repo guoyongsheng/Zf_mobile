@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mine_fragment_view_height"
+        android:background="@color/aliwx_white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/mine_fragment_view_height"
+        android:paddingRight="@dimen/mine_fragment_view_height">
+
+        <TextView
+            android:id="@+id/feedback_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mine_fragment_view_height"
+            android:background="@color/aliwx_white"
+            android:paddingBottom="@dimen/add_cloud_note_icon"
+            android:text="@string/shits"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/aliwx_black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_view_width"
+            android:background="@color/common_divider_color" />
+
+        <TextView
+            android:id="@+id/reply_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/aliwx_white"
+            android:paddingBottom="@dimen/add_cloud_note_icon"
+            android:paddingTop="@dimen/add_cloud_note_icon"
+            android:text="@string/reply"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/aliwx_black" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/common_margin_left"
+    android:background="@color/colorWhite"
+    android:paddingBottom="@dimen/common_padding_bottom"
+    android:paddingTop="@dimen/common_padding_top">
+
+    <ImageView
+        android:id="@+id/item_home_weather_today_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_favorite_red_400_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_home_weather_today_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_home_weather_today_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/weather_today"
+        android:textSize="@dimen/font_normal"
+        app:layout_constraintLeft_toRightOf="@id/item_home_weather_today_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/item_home_weather_today_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintLeft_toLeftOf="@id/item_home_weather_today_value"
+        app:layout_constraintLeft_toRightOf="@id/item_home_weather_today_iv"
+        app:layout_constraintTop_toBottomOf="@id/item_home_weather_today_value" />
+
+    <ImageView
+        android:id="@+id/item_home_weather_today_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_more_horiz_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/item_home_weather_today_iv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_home_weather_today_iv" />
+
+
+    <TextView
+        android:id="@+id/item_home_weather_today_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/common_padding_top"
+        android:layout_marginTop="@dimen/common_padding_top"
+        android:textSize="@dimen/font_normal"
+        app:layout_constraintRight_toLeftOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/item_home_weather_today_time" />
+
+
+    <TextView
+        android:id="@+id/item_home_weather_today_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_bottom"
+        android:textSize="@dimen/font_normal"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@id/item_home_weather_today_weather" />
+
+    <TextView
+        android:id="@+id/item_home_weather_today_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_padding_top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_home_weather_today_temperature" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</android.support.constraint.ConstraintLayout>

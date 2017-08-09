@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="key_never_disturb"
+        android:summary="收到消息不会有震动和提示音"
+        android:title="免打扰模式" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="key_voice_play_mode"
+        android:summary="使用听筒播放语音消息"
+        android:title="语音播放" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="key_need_sound"
+        android:summary="收到消息时需要提示音"
+        android:title="消息提示音" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="key_need_vibration"
+        android:summary="收到消息时震动"
+        android:title="消息震动" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="key_need_nick"
+        android:summary="显示消息发送人昵称(不包括自己)"
+        android:title="昵称显示" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="key_need_writing_state"
+        android:title="聊天显示“对方正在输入中”状态" />
+
+</PreferenceScreen>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tribe_info_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/common_head" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tribe_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_margin_left" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/aliwx_common_line_color" />
+
+            <FrameLayout
+                android:id="@+id/tribe_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/aliwx_white"
+                android:paddingBottom="@dimen/common_padding_top"
+                android:paddingLeft="@dimen/common_margin_left"
+                android:paddingRight="@dimen/common_margin_left"
+                android:paddingTop="@dimen/common_padding_top">
+
+                <TextView
+                    style="@style/more_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/str_tribe_name" />
+
+                <TextView
+                    android:id="@+id/tribe_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:ellipsize="end"
+                    android:maxLength="12"
+                    android:textSize="@dimen/aliwx_font_second_grade"
+                    tools:text="balabalabala" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/aliwx_common_line_color" />
+
+            <FrameLayout
+                android:id="@+id/tribe_zx_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/aliwx_white"
+                android:paddingBottom="@dimen/common_padding_top"
+                android:paddingLeft="@dimen/common_margin_left"
+                android:paddingRight="@dimen/common_margin_left"
+                android:paddingTop="@dimen/common_padding_top">
+
+                <TextView
+                    style="@style/more_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/str_tribe_zx" />
+
+                <ImageView
+                    android:id="@+id/tribe_iv_zx"
+                    style="@style/more_item_style"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="#345345"
+                    android:contentDescription="@null" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/aliwx_common_line_color" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/common_margin_left"
+                android:background="@color/aliwx_common_line_color" />
+
+            <FrameLayout
+                android:id="@+id/tribe_nick_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/aliwx_white"
+                android:paddingBottom="@dimen/common_padding_top"
+                android:paddingLeft="@dimen/common_margin_left"
+                android:paddingRight="@dimen/common_margin_left"
+                android:paddingTop="@dimen/common_padding_top">
+
+                <TextView
+                    android:id="@+id/my_tribe_profile"
+                    style="@style/more_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/my_tribe_card" />
+
+                <TextView
+                    android:id="@+id/my_tribe_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:ellipsize="end"
+                    android:maxLength="12"
+                    android:maxLines="1"
+                    tools:text="123123" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/aliwx_common_line_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/common_margin_left"
+                android:background="@color/aliwx_common_line_color" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/aliwx_white"
+                android:paddingLeft="@dimen/common_margin_left"
+                android:paddingRight="@dimen/common_margin_left">
+
+                <TextView
+                    style="@style/more_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/str_make_top" />
+
+                <ToggleButton
+                    android:id="@+id/tribe_tb_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_btn"
+                    android:checked="false"
+                    android:textOff="@string/str_off"
+                    android:textOn="@string/str_on" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/aliwx_common_line_color" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/aliwx_white"
+                android:paddingLeft="@dimen/common_margin_left"
+                android:paddingRight="@dimen/common_margin_left">
+
+                <TextView
+                    style="@style/more_item_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/_str_notify_enable" />
+
+                <ToggleButton
+                    android:id="@+id/tribe_msg_rec_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_btn"
+                    android:checked="false"
+                    android:textOff="@string/str_off"
+                    android:textOn="@string/str_on" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/aliwx_common_line_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/common_margin_left"
+                android:background="@color/aliwx_common_line_color" />
+
+            <TextView
+                android:id="@+id/clear_tribe_msg"
+                style="@style/more_item_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/common_margin_top"
+                android:paddingLeft="@dimen/common_margin_left"
+                android:paddingRight="@dimen/common_margin_left"
+                android:paddingTop="@dimen/common_margin_top"
+                android:text="@string/clear_tribe_cache" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/aliwx_common_line_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/common_icon_size"
+                android:background="@color/aliwx_common_line_color" />
+
+            <Button
+                android:id="@+id/quite_tribe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginRight="@dimen/common_margin_left"
+                android:layout_marginBottom="80dp"
+                android:background="#ca0000"
+                android:gravity="center"
+                android:text="@string/quite_tribe"
+                android:textColor="@color/aliwx_setting_bg_nor"
+                android:textSize="@dimen/aliwx_common_text_size" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

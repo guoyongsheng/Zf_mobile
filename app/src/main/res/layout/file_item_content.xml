@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/aliwx_white"
+    android:paddingStart="@dimen/common_margin_left"
+    android:paddingEnd="@dimen/common_margin_left"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/file_item_typed_iv"
+        android:layout_width="@dimen/aliwx_conversation_content_layout_margin_right"
+        android:layout_height="@dimen/aliwx_conversation_content_layout_margin_right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/file_item_tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_margin_left"
+        android:maxLines="2"
+        android:textSize="@dimen/aliwx_font_first_grade"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintLeft_toRightOf="@+id/file_item_typed_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/file_item_tv_size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_margin_left"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/aliwx_color_gray_02"
+        android:textSize="@dimen/font_small"
+        app:layout_constraintLeft_toRightOf="@+id/file_item_typed_iv"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.6"
+        tools:text="30kb" />
+
+    <TextView
+        android:id="@+id/file_item_media_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/file_item_tv_size"
+        app:layout_constraintBaseline_toBaselineOf="@+id/file_item_tv_size"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="12sp"
+        android:textColor="@color/aliwx_color_gray_02"
+        app:layout_constraintVertical_bias="0.6"
+        tools:text="123"
+        />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+</android.support.constraint.ConstraintLayout>

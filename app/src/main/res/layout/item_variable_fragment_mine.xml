@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/item_variable_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_right"
+        android:background="@color/common_background" />
+
+    <RelativeLayout
+        android:id="@+id/item_variable_fragment_mine_rl"
+        style="@style/common_style_relative">
+
+        <ImageView
+            android:id="@+id/item_variable_fragment_mine_iv"
+            android:layout_width="@dimen/common_icon_size"
+            android:layout_height="@dimen/common_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_margin_left"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/item_variable_fragment_mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/common_padding_bottom"
+            android:layout_toRightOf="@id/item_variable_fragment_mine_iv"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:id="@+id/item_variable_fragment_mine_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/mine_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin_right"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/orange"
+            />
+
+        <ImageView
+            android:id="@+id/mine_arrow"
+            style="@style/common_style_arrow"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/common_divider_color"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/item_variable_fragment_mine_iv"
+            android:layout_marginLeft="@dimen/common_padding_bottom"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

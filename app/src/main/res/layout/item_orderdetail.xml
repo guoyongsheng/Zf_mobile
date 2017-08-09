@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+   <ImageView
+       android:id="@+id/orderdetail_eateryimage"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:background="@color/__picker_common_primary"
+       android:layout_margin="10dp"
+
+       />
+
+    <TextView
+        android:id="@+id/orderdetail_eateryname"
+        android:layout_toRightOf="@+id/orderdetail_eateryimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一食堂"
+        android:padding="10dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/orderdetail_top_time"
+        android:layout_toRightOf="@+id/orderdetail_eateryimage"
+        android:layout_below="@+id/orderdetail_eateryname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="12sp"
+        android:text="下单时间"/>
+
+
+</RelativeLayout>

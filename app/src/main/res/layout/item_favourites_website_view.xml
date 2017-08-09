@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/aliwx_white"
+    android:orientation="vertical"
+    android:id="@+id/item_website_layout"
+    >
+
+    <include layout="@layout/item_favourites_head_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_margin_left">
+
+        <ImageView
+            android:id="@+id/favourites_website_image_iv"
+            android:layout_width="@dimen/about_logo_margin_top"
+            android:layout_height="@dimen/about_logo_margin_top"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/hploading_default" />
+
+        <TextView
+            android:id="@+id/favourites_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/about_logo_margin_top"
+            android:layout_marginLeft="@dimen/add_cloud_note_title_right"
+            android:layout_toRightOf="@+id/favourites_website_image_iv"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLength="100"
+            android:maxLines="3"
+            android:textColor="@color/aliwx_black"
+            android:textSize="@dimen/font_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_padding_top"
+        android:background="@color/__picker_common_primary" />
+</LinearLayout>

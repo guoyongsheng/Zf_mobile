@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/common_margin_top">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/item_subscription_center_select_header_margin_right"
+        android:maxLines="1"
+        android:text="@string/subscription_center_selected_header"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/item_header_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/common_margin_right"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:text="@string/drag_to_sort"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_small"
+        android:visibility="visible" />
+
+</RelativeLayout>

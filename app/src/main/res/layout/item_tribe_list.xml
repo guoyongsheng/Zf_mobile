@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/common_margin_left"
+    android:paddingRight="@dimen/common_margin_left"
+    android:paddingTop="@dimen/common_margin_top"
+    android:paddingBottom="@dimen/common_margin_top"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_tribe_head"
+        android:layout_width="@dimen/aliwx_common_head_size"
+        android:layout_height="@dimen/aliwx_common_head_size"
+        tools:src="@drawable/aliwx_tribe_head_default"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/item_tribe_name"
+        style="@style/aliwx_column_msg_title_style"
+        android:layout_marginLeft="@dimen/common_margin_top"
+        android:layout_marginStart="@dimen/common_margin_top"
+        tools:text="123123"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/aliwx_message_item_height"
+        android:ellipsize="middle" />
+
+</LinearLayout>

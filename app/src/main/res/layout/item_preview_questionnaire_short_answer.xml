@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/common_margin_left"
+    android:paddingTop="@dimen/common_margin_left">
+
+    <TextView
+        android:id="@+id/item_preview_questionnaire_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_margin_left"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_normal" />
+
+    <EditText
+        android:id="@+id/item_preview_questionnaire_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:background="@drawable/drawable_feed_back"
+        android:gravity="left|top"
+        android:hint=""
+        android:minHeight="@dimen/release_news_detail_min_height"
+        android:paddingBottom="@dimen/common_padding_bottom"
+        android:paddingLeft="@dimen/common_padding_top"
+        android:paddingRight="@dimen/common_padding_bottom"
+        android:paddingTop="@dimen/common_padding_top"
+        android:textSize="@dimen/font_normal" />
+
+</LinearLayout>

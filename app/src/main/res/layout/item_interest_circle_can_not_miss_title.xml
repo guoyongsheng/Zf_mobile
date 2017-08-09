@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <View
+        android:id="@+id/item_interest_circle_view_can_not_miss"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_margin_right"
+        android:background="@color/common_background"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/item_interest_circle_views_can_not_miss"
+        android:layout_width="@dimen/interest_circle_indicator_height"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/common_padding_bottom"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginTop="@dimen/common_padding_top"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_interest_circle_view_can_not_miss" />
+
+    <TextView
+        android:id="@+id/item_interest_circle_title_can_not_miss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_padding_bottom"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:gravity="center_vertical"
+        android:text="@string/can_not_miss_the_circle_of_interest"
+        android:paddingBottom="@dimen/common_padding_bottom"
+        android:paddingTop="@dimen/common_padding_top"
+        android:textSize="@dimen/font_normal"
+        app:layout_constraintLeft_toRightOf="@id/item_interest_circle_views_can_not_miss"
+        app:layout_constraintTop_toBottomOf="@id/item_interest_circle_view_can_not_miss" />
+
+</android.support.constraint.ConstraintLayout>

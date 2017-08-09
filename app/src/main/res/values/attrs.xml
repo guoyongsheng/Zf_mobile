@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--图片添加器-->
+    <declare-styleable name="ZzImageBox">
+        <attr name="zib_max_line" format="integer" />
+        <attr name="zib_img_size_one_line" format="integer" />
+        <attr name="zib_img_padding" format="dimension|reference" />
+        <attr name="zib_img_default" format="color|reference" />
+        <attr name="zib_img_delete" format="color|reference" />
+        <attr name="zib_img_add" format="color|reference" />
+        <attr name="zib_img_deletable" format="boolean" />
+        <attr name="zib_left_margin" format="dimension|reference" />
+        <attr name="zib_right_margin" format="dimension|reference" />
+    </declare-styleable>
+
+    <!--自定义加减控件-->
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension" />
+        <attr name="btnTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

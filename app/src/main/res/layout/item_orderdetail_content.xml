@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/orderdetail_foodpic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/__picker_common_primary"
+        />
+
+    <TextView
+        android:id="@+id/orderdetail_foodname"
+        android:layout_toRightOf="@+id/orderdetail_foodpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:text="肉包"/>
+
+
+    <TextView
+        android:id="@+id/orderdetail_foodcount"
+        android:layout_toRightOf="@+id/orderdetail_foodpic"
+        android:layout_below="@+id/orderdetail_foodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:text="x12"/>
+
+
+    <TextView
+        android:id="@+id/orderdetail_foodprice"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:padding="20dp"
+        android:text="45"/>
+
+</RelativeLayout>

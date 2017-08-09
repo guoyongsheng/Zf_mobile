@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_layout"
+    android:layout_marginTop="@dimen/add_cloud_note_icon"
+    android:layout_marginLeft="@dimen/add_cloud_note_icon"
+    android:layout_marginRight="@dimen/add_cloud_note_icon"
+    android:background="@drawable/drawable_cloud_note_list"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/tag_view"
+        android:layout_width="@dimen/inner_corner_width"
+        android:layout_height="match_parent"
+        android:background="@color/cameo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/add_cloud_note_title_right"
+        android:layout_marginLeft="@dimen/add_cloud_note_icon"
+        android:layout_marginRight="@dimen/add_cloud_note_title_right"
+        android:layout_marginTop="@dimen/add_cloud_note_title_right" >
+
+        <TextView
+            android:id="@+id/note_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/add_cloud_note_title_right"
+            android:layout_toLeftOf="@+id/selected_iv"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textSize="@dimen/font_normal" />
+
+        <CheckBox
+            android:id="@+id/selected_iv"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="@dimen/inner_corner_length"
+            android:layout_height="@dimen/inner_corner_length"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/text_iv"
+            android:layout_width="@dimen/add_cloud_note_icon"
+            android:layout_height="@dimen/add_cloud_note_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/note_content_tv"
+            android:layout_marginTop="@dimen/add_cloud_note_title_right"
+            android:contentDescription="@null"
+            android:src="@mipmap/note_minuts"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/photo_iv"
+            android:layout_width="@dimen/add_cloud_note_icon"
+            android:layout_height="@dimen/add_cloud_note_icon"
+            android:layout_below="@+id/note_content_tv"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/add_cloud_note_title_right"
+            android:layout_toRightOf="@+id/text_iv"
+            android:contentDescription="@null"
+            android:src="@mipmap/pic_s"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/note_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/selected_iv"
+            android:layout_marginTop="@dimen/add_cloud_note_title_right"
+            android:text=""
+            android:textColor="@color/color_bg_gray2"
+            android:textSize="@dimen/font_small" />
+    </RelativeLayout>
+
+</LinearLayout>

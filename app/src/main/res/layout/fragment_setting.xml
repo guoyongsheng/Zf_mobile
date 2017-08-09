@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/setting_item_margin_top">
+
+        <RelativeLayout
+            android:id="@+id/setting_check_version"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/setting_item_margin_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginStart="@dimen/common_margin_left"
+                android:text="@string/check_version"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                android:id="@+id/setting_check_version_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/common_margin_right"
+                android:layout_marginRight="@dimen/common_margin_right"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/red_point"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_account_and_save"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/setting_item_margin_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginStart="@dimen/common_margin_left"
+                android:text="@string/account_and_save"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                style="@style/common_style_arrow"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_common_set"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/common_view_width">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginStart="@dimen/common_margin_left"
+                android:text="@string/common_set"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                style="@style/common_style_arrow"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/setting_chat_set"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/common_view_width">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginStart="@dimen/common_margin_left"
+                android:text="@string/str_chat_set"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                style="@style/common_style_arrow"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_clear_cache"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/setting_item_margin_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginStart="@dimen/common_margin_left"
+                android:text="@string/common_clear_cache"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font_normal" />
+
+
+            <TextView
+                android:id="@+id/setting_cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/common_margin_right"
+                android:layout_marginRight="@dimen/common_margin_right"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/setting_shareapp"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/setting_item_margin_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginStart="@dimen/common_margin_left"
+                android:text="@string/shareapp"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                style="@style/common_style_arrow"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/setting_suggestion"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/setting_item_margin_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginStart="@dimen/common_margin_left"
+                android:text="@string/suggestion"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                style="@style/common_style_arrow"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_about_us"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/common_view_width">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginStart="@dimen/common_margin_left"
+                android:text="@string/common_about_us"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                style="@style/common_style_arrow"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/setting_exit_login"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/setting_item_margin_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:layout_marginStart="@dimen/common_margin_left"
+                android:text="@string/common_exit_login"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

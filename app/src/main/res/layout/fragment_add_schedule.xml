@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/schedule_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_margin_right"
+            android:background="@drawable/drawable_feed_back"
+            android:hint="@string/please_input_title"
+            android:inputType="text"
+            android:maxLines="@integer/text_max_lines"
+            android:paddingBottom="@dimen/common_padding_bottom"
+            android:paddingLeft="@dimen/common_padding_bottom"
+            android:paddingRight="@dimen/common_padding_bottom"
+            android:paddingTop="@dimen/common_padding_top"
+            android:textSize="@dimen/font_normal" />
+
+        <RelativeLayout
+            android:id="@+id/relative_start_time"
+            style="@style/common_style_relative">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:text="@string/start_time"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                android:id="@+id/arror_start_time"
+                style="@style/common_style_arrow"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/schedule_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/arror_start_time"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_end_time"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/common_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:text="@string/end_time"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                android:id="@+id/arror_end_time"
+                style="@style/common_style_arrow"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/schedule_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/arror_end_time"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_hint_time"
+            style="@style/common_style_relative"
+            android:layout_marginTop="@dimen/common_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:text="@string/hint_time"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                android:id="@+id/arror_hint_time"
+                style="@style/common_style_arrow"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/schedule_hint_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/arror_hint_time"
+                android:tag="0"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_repeat_time"
+            style="@style/common_style_relative"
+            android:layout_marginBottom="@dimen/common_margin_left"
+            android:layout_marginTop="@dimen/common_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/common_margin_left"
+                android:text="@string/repeat_time"
+                android:textSize="@dimen/font_normal" />
+
+            <ImageView
+                android:id="@+id/arror_repeat_time"
+                style="@style/common_style_arrow"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/schedule_repeat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/arror_repeat_time"
+                android:tag="0"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/font_normal" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

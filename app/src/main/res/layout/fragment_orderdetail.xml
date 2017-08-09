@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/aliwx_color_white"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_order_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="商家已接单" />
+
+            <TextView
+                android:id="@+id/tv_order_onemore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/drawable_rectengle"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="再来一单"/>
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="期望时间：14：44"/>
+
+
+        <TextView
+            android:id="@+id/tv_order_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="配送地址：紫荆港"/>
+
+        <TextView
+            android:id="@+id/tv_order_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="备注：紫金港"/>
+
+        <TextView
+            android:id="@+id/people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="几人用餐：10"/>
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号：2345566677"/>
+
+        <TextView
+            android:id="@+id/tv_order_times"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单时间：2017-12-30 12：34：34"/>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

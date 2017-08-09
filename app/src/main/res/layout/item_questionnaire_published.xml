@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/questionnaire_published_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingTop="@dimen/common_margin_top"
+    android:tag="0">
+
+    <TextView
+        android:id="@+id/questionnaire_published_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin_left"
+        android:layout_marginRight="@dimen/item_questionnaire_publish_margin_right"
+        android:maxLines="1"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/questionnaire_published_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:textSize="@dimen/font_normal" />
+
+    <TextView
+        android:id="@+id/questionnaire_published_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/questionnaire_published_title"
+        android:layout_below="@id/questionnaire_published_title"
+        android:layout_marginBottom="@dimen/common_padding_bottom"
+        android:layout_marginRight="@dimen/item_questionnaire_publish_margin_right"
+        android:layout_marginTop="@dimen/common_margin_top"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/font_normal" />
+
+
+    <TextView
+        android:id="@+id/questionnaire_published_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/questionnaire_published_description"
+        android:layout_marginRight="@dimen/common_margin_right"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/font_normal" />
+
+    <LinearLayout
+        android:id="@+id/questionnaire_published_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionnaire_published_description"
+        android:background="@color/colorGray"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_padding_bottom"
+        android:paddingTop="@dimen/common_padding_top"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/questionnaire_published_join"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/common_icon_size"
+                android:layout_height="@dimen/common_icon_size"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionnaire_join"
+                android:textSize="@dimen/font_normal" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/questionnaire_published_look"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="@dimen/common_icon_size"
+                android:layout_height="@dimen/common_icon_size"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/questionnaire_look"
+                android:textSize="@dimen/font_normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
